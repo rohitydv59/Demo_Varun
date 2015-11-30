@@ -75,6 +75,18 @@
     return [MTLJSONAdapter arrayTransformerWithModelClass:[EYProductFilters class]];
 }
 
+
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_productsInfo forKey:@"productsInfo"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _productsInfo = [decoder decodeObjectForKey:@"productsInfo"];
+    
+    return self;
+}
+
+
 @end
 
 @implementation EYProductsInfo
@@ -105,6 +117,60 @@
              @"productResizeImages" : @"productResizeImages"
              };
 }
+
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_absoluteDiscount forKey:@"absoluteDiscount"];
+    [encoder encodeObject:_brandId forKey:@"brandId"];
+    [encoder encodeObject:_brandName forKey:@"brandName"];
+    [encoder encodeObject:_categories forKey:@"categories"];
+    [encoder encodeObject:_discountedPercentage forKey:@"discountedPercentage"];
+    [encoder encodeObject:_eightDayRentalPrice forKey:@"eightDayRentalPrice"];
+    [encoder encodeObject:_fourDayRentalPrice forKey:@"fourDayRentalPrice"];
+    [encoder encodeObject:_insurance forKey:@"insurance"];
+    [encoder encodeObject:_occasions forKey:@"occasions"];
+    [encoder encodeObject:_originalPrice forKey:@"originalPrice"];
+    [encoder encodeObject:_productAttributes forKey:@"productAttributes"];
+    [encoder encodeObject:_productDetails forKey:@"productDetails"];
+    [encoder encodeObject:_productId forKey:@"productId"];
+    [encoder encodeObject:_productName forKey:@"productName"];
+    [encoder encodeObject:_productSKUs forKey:@"productSKUs"];
+    [encoder encodeObject:_salePercentage forKey:@"salePercentage"];
+    [encoder encodeObject:_salePrice forKey:@"salePrice"];
+    [encoder encodeObject:_shippingFee forKey:@"shippingFee"];
+    [encoder encodeObject:_status forKey:@"status"];
+    [encoder encodeObject:_stylistNotes forKey:@"stylistNotes"];
+    [encoder encodeObject:_tags forKey:@"tags"];
+    [encoder encodeObject:_productResizeImages forKey:@"productResizeImages"];
+
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _absoluteDiscount = [decoder decodeObjectForKey:@"absoluteDiscount"];
+    _brandId = [decoder decodeObjectForKey:@"brandId"];
+    _brandName = [decoder decodeObjectForKey:@"brandName"];
+    _categories = [decoder decodeObjectForKey:@"categories"];
+    _discountedPercentage = [decoder decodeObjectForKey:@"discountedPercentage"];
+    _eightDayRentalPrice = [decoder decodeObjectForKey:@"eightDayRentalPrice"];
+    _fourDayRentalPrice = [decoder decodeObjectForKey:@"fourDayRentalPrice"];
+    _insurance = [decoder decodeObjectForKey:@"insurance"];
+    _occasions = [decoder decodeObjectForKey:@"occasions"];
+    _originalPrice = [decoder decodeObjectForKey:@"originalPrice"];
+    _productAttributes = [decoder decodeObjectForKey:@"productAttributes"];
+    _productDetails = [decoder decodeObjectForKey:@"productDetails"];
+    _productId = [decoder decodeObjectForKey:@"productId"];
+    _productName = [decoder decodeObjectForKey:@"productName"];
+    _productSKUs = [decoder decodeObjectForKey:@"productSKUs"];
+    _salePercentage = [decoder decodeObjectForKey:@"salePercentage"];
+    _salePrice = [decoder decodeObjectForKey:@"salePrice"];
+    _shippingFee = [decoder decodeObjectForKey:@"shippingFee"];
+    _status = [decoder decodeObjectForKey:@"status"];
+    _stylistNotes = [decoder decodeObjectForKey:@"stylistNotes"];
+    _tags = [decoder decodeObjectForKey:@"tags"];
+    _productResizeImages = [decoder decodeObjectForKey:@"productResizeImages"];
+    
+    return self;
+}
+
 
 + (NSValueTransformer *)productAttributesJSONTransformer
 {
@@ -140,6 +206,33 @@
              };
 }
 
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_attrValueIds forKey:@"attrValueIds"];
+    [encoder encodeObject:_attrValues forKey:@"attrValues"];
+    [encoder encodeObject:_attributeId forKey:@"attributeId"];
+    [encoder encodeObject:_attributeName forKey:@"attributeName"];
+    [encoder encodeObject:_attributeValueId forKey:@"attributeValueId"];
+    [encoder encodeObject:_createdBy forKey:@"createdBy"];
+    [encoder encodeObject:_modifiedBy forKey:@"modifiedBy"];
+    [encoder encodeObject:_productAttributeId forKey:@"productAttributeId"];
+    [encoder encodeObject:_productId forKey:@"productId"];
+    [encoder encodeObject:_status forKey:@"status"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _attrValueIds = [decoder decodeObjectForKey:@"attrValueIds"];
+    _attrValues = [decoder decodeObjectForKey:@"attrValues"];
+    _attributeId = [decoder decodeObjectForKey:@"attributeId"];
+    _attributeName = [decoder decodeObjectForKey:@"attributeName"];
+    _attributeValueId = [decoder decodeObjectForKey:@"attributeValueId"];
+    _createdBy = [decoder decodeObjectForKey:@"createdBy"];
+    _modifiedBy = [decoder decodeObjectForKey:@"modifiedBy"];
+    _productAttributeId = [decoder decodeObjectForKey:@"productAttributeId"];
+    _productId = [decoder decodeObjectForKey:@"productId"];
+    _status = [decoder decodeObjectForKey:@"status"];
+    return self;
+}
+
 @end
 
 @implementation EYProductSKUs
@@ -153,6 +246,25 @@
              @"sizeValueId" : @"sizeValueId",
              @"sku" : @"sku"
              };
+}
+
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_depth forKey:@"depth"];
+    [encoder encodeObject:_entityId forKey:@"entityId"];
+    [encoder encodeObject:_isActive forKey:@"isActive"];
+    [encoder encodeObject:_productId forKey:@"productId"];
+    [encoder encodeObject:_sizeValueId forKey:@"sizeValueId"];
+    [encoder encodeObject:_sku forKey:@"sku"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _depth = [decoder decodeObjectForKey:@"depth"];
+    _entityId = [decoder decodeObjectForKey:@"entityId"];
+    _isActive = [decoder decodeObjectForKey:@"isActive"];
+    _productId = [decoder decodeObjectForKey:@"productId"];
+    _sizeValueId = [decoder decodeObjectForKey:@"sizeValueId"];
+    _sku = [decoder decodeObjectForKey:@"sku"];
+    return self;
 }
 
 @end
@@ -171,6 +283,27 @@
              };
 }
 
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_filterType forKey:@"filterType"];
+    [encoder encodeObject:_name forKey:@"name"];
+    [encoder encodeObject:_filterId forKey:@"filterId"];
+    [encoder encodeObject:_valueIds forKey:@"valueIds"];
+    [encoder encodeObject:_values forKey:@"values"];
+    [encoder encodeObject:_minVal forKey:@"minVal"];
+    [encoder encodeObject:_maxVal forKey:@"maxVal"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _filterType = [decoder decodeObjectForKey:@"filterType"];
+    _name = [decoder decodeObjectForKey:@"name"];
+    _filterId = [decoder decodeObjectForKey:@"filterId"];
+    _valueIds = [decoder decodeObjectForKey:@"valueIds"];
+    _values = [decoder decodeObjectForKey:@"values"];
+    _minVal = [decoder decodeObjectForKey:@"minVal"];
+    _maxVal = [decoder decodeObjectForKey:@"maxVal"];
+    return self;
+}
+
 @end
 
 @implementation EYProductResizeImages
@@ -181,6 +314,19 @@
              @"imageSize" : @"imageSize",
              @"imageTag" : @"imageTag",
              };
+}
+
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_image forKey:@"image"];
+    [encoder encodeObject:_imageSize forKey:@"imageSize"];
+    [encoder encodeObject:_imageTag forKey:@"imageTag"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _image = [decoder decodeObjectForKey:@"image"];
+    _imageSize = [decoder decodeObjectForKey:@"imageSize"];
+    _imageTag = [decoder decodeObjectForKey:@"imageTag"];
+    return self;
 }
 
 @end

@@ -1637,6 +1637,7 @@
 				B65792FB1B78736100BEED08 /* Resources */,
 				D11693D68408AD368EB87832 /* Copy Pods Resources */,
 				73D2EEA61BCF87C100C02798 /* ShellScript */,
+				8CD4AC05A84C99FEBBB4D0F2 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1827,6 +1828,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run ceee40da2d64543f49ef3bc09c51b3849963d534 2e9b84dec8beed2ae6c2863c6780fb71b6adf91991cf042ffa1def21e42d4f66";
+		};
+		8CD4AC05A84C99FEBBB4D0F2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Eyvee/Pods-Eyvee-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		D11693D68408AD368EB87832 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
