@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceTableViewCellIdentifier" rowHeight="94" id="KGk-i7-Jjw" customClass="PriceTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="center" restorationIdentifier="RangeSlider" translatesAutoresizingMaskIntoConstraints="NO" id="LU0-fl-0bc" customClass="RangeSlider">
+                        <rect key="frame" x="0.0" y="19" width="320" height="28"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="U3Q-8Y-0wR"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BEp-jJ-iu6">
+                        <rect key="frame" x="233" y="63" width="59" height="14"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="d0o-zJ-fLD"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="to">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Rs.1200">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
+                                    <font key="NSOriginalFont" size="12" name="HelveticaNeue-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCZ-DM-PKg">
+                        <rect key="frame" x="24" y="63" width="70" height="14"/>
+                        <animations/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="WMP-kl-lId"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="From">
+                                <attributes>
+                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                    <font key="NSOriginalFont" size="12" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content=" ">
+                                <attributes>
+                                    <font key="NSFont" size="12" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                            <fragment content="Rs.300">
+                                <attributes>
+                                    <font key="NSFont" size="12" name="HelveticaNeue-Medium"/>
+                                    <font key="NSOriginalFont" size="12" name="HelveticaNeue-Medium"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="fCZ-DM-PKg" firstAttribute="top" secondItem="LU0-fl-0bc" secondAttribute="bottom" constant="16" id="0oe-Aj-TeC"/>
+                    <constraint firstItem="LU0-fl-0bc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1ft-FR-uJq"/>
+                    <constraint firstItem="fCZ-DM-PKg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="5xk-tZ-6lB"/>
+                    <constraint firstAttribute="bottom" secondItem="BEp-jJ-iu6" secondAttribute="bottom" constant="28" id="9k1-k0-Zon"/>
+                    <constraint firstAttribute="bottom" secondItem="fCZ-DM-PKg" secondAttribute="bottom" constant="28" id="c0F-HB-WUh"/>
+                    <constraint firstAttribute="trailing" secondItem="LU0-fl-0bc" secondAttribute="trailing" id="e4N-wX-612"/>
+                    <constraint firstAttribute="trailing" secondItem="BEp-jJ-iu6" secondAttribute="trailing" constant="28" id="eEa-Zg-1fp"/>
+                    <constraint firstItem="BEp-jJ-iu6" firstAttribute="top" secondItem="LU0-fl-0bc" secondAttribute="bottom" constant="16" id="iM7-tY-3MQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="fromPriceLabel" destination="fCZ-DM-PKg" id="qFZ-uz-DSA"/>
+                <outlet property="rangeSlider" destination="LU0-fl-0bc" id="1ll-1s-Ryc"/>
+                <outlet property="toPriceLabel" destination="BEp-jJ-iu6" id="6NO-YU-9Ki"/>
+            </connections>
+            <point key="canvasLocation" x="111" y="145"/>
+        </tableViewCell>
+    </objects>
+</document>

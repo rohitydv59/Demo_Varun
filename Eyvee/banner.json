@@ -1,0 +1,308 @@
+{
+    "status": "SUCCESS",
+    "statusCode": 200,
+    "message": "Request Served Successfully",
+    "description": null,
+    "data": [
+             {
+             "bannerId": 33,
+             "bannerName": "AD",
+             "headerText": "Your endless closet is here. Never Buy!",
+             "middleText": "20% off on first rental , use code FTE20 ",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/AD-130480250-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/AD-130480250-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/AD-130480250-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "AD-130480250.jpg",
+             "link": "",
+             "runOrder": 1,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/AD-130480250.jpg",
+             "headerFont": 14,
+             "middleFont": 12,
+             "bottomFont": 0,
+             "bannerProductsFile":""
+             },
+             {
+             "bannerId": 19,
+             "bannerName": "Classic Lehengas",
+             "headerText": "Never run out of style",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/beautifullenghas1362067127-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/beautifullenghas1362067127-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/beautifullenghas1362067127-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "beautifullenghas1362067127.jpg",
+             "link": "",
+             "runOrder": 2,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/beautifullenghas1362067127.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"classicLehnga"
+             },
+             {
+             "bannerId": 13,
+             "bannerName": "Date Night",
+             "headerText": "knock his socks off ",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/valentineday-1899256096-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/valentineday-1899256096-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/valentineday-1899256096-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "valentineday-1899256096.jpg",
+             "link": "",
+             "runOrder": 3,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/valentineday-1899256096.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"dateNight"
+             },
+             {
+             "bannerId": 21,
+             "bannerName": "how it works ",
+             "headerText": "rent. wear. return",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/howitworks-1553285774-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/howitworks-1553285774-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/howitworks-1553285774-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "howitworks-1553285774.jpg",
+             "link": "https://www.renttherunway.com/how_it_works",
+             "runOrder": 4,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/howitworks-1553285774.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"classicLehnga"
+             },
+             {
+             "bannerId": 15,
+             "bannerName": "Wedding Guest",
+             "headerText": "dress to impress",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/winterweddings-570502318-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/winterweddings-570502318-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/winterweddings-570502318-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "winterweddings-570502318.jpg",
+             "link": "",
+             "runOrder": 5,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/winterweddings-570502318.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"dateNight"
+             },
+             {
+             "bannerId": 27,
+             "bannerName": "The Maxi Dress",
+             "headerText": "for that ultra flattering look",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheMaxiDress355824899-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheMaxiDress355824899-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheMaxiDress355824899-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "TheMaxiDress355824899.jpg",
+             "link": "",
+             "runOrder": 6,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheMaxiDress355824899.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"classicLehnga"
+             },
+             {
+             "bannerId": 17,
+             "bannerName": "editors' pick",
+             "headerText": "our top choices",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/editorspick1999144526-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/editorspick1999144526-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/editorspick1999144526-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "editorspick1999144526.jpg",
+             "link": "",
+             "runOrder": 7,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/editorspick1999144526.jpg",
+             "headerFont": 14,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"dateNight"
+             },
+             {
+             "bannerId": 29,
+             "bannerName": "The Bag",
+             "headerText": "a plus-one you need ",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheBag-1428078884-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheBag-1428078884-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheBag-1428078884-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "TheBag-1428078884.jpg",
+             "link": "",
+             "runOrder": 8,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/TheBag-1428078884.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"classicLehnga"
+             },
+             {
+             "bannerId": 28,
+             "bannerName": "Rohit Bal or Ted Baker?",
+             "headerText": "spoilt for choice ",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/RohitBalorTedBaker2079762490-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/RohitBalorTedBaker2079762490-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/RohitBalorTedBaker2079762490-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "RohitBalorTedBaker2079762490.jpg",
+             "link": "",
+             "runOrder": 9,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/RohitBalorTedBaker2079762490.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"dateNight"
+             },
+             {
+             "bannerId": 30,
+             "bannerName": "Power Dressing ",
+             "headerText": "ready for success",
+             "middleText": "",
+             "bottomText": "",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/PowerDressing-1874183035-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/PowerDressing-1874183035-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/PowerDressing-1874183035-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "imageName": "PowerDressing-1874183035.jpg",
+             "link": "",
+             "runOrder": 10,
+             "isActive": 1,
+             "imagePath": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/banners/PowerDressing-1874183035.jpg",
+             "headerFont": 16,
+             "middleFont": 0,
+             "bottomFont": 0,
+             "bannerProductsFile":"classicLehnga"
+             }
+             ]
+}

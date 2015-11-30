@@ -1,0 +1,2031 @@
+{
+    "status": "SUCCESS",
+    "statusCode": 200,
+    "message": "Request Served Successfully",
+    "description": null,
+    "data": {
+        "productsFilters": [
+                            {
+                            "filterType": "fourdayrentalprice",
+                            "name": "fourdayrentalprice",
+                            "id": "-1",
+                            "valueIds": null,
+                            "values": null,
+                            "minVal": "580",
+                            "maxVal": "2240"
+                            },
+                            {
+                            "filterType": "eightdayrentalprice",
+                            "name": "eightdayrentalprice",
+                            "id": "-1",
+                            "valueIds": null,
+                            "values": null,
+                            "minVal": "870",
+                            "maxVal": "3360"
+                            },
+                            {
+                            "filterType": "attribute",
+                            "name": "Size",
+                            "id": "4",
+                            "valueIds": [
+                                         231,
+                                         234,
+                                         235,
+                                         236,
+                                         239,
+                                         240,
+                                         241,
+                                         242,
+                                         243,
+                                         244
+                                         ],
+                            "values": [
+                                       "free size",
+                                       "s",
+                                       "m",
+                                       "l",
+                                       "US 0",
+                                       "US2",
+                                       "US4",
+                                       "US6",
+                                       "US8",
+                                       "US10"
+                                       ],
+                            "minVal": null,
+                            "maxVal": null
+                            },
+                            {
+                            "filterType": "occasion",
+                            "name": "occasion",
+                            "id": "-1",
+                            "valueIds": [
+                                         4
+                                         ],
+                            "values": [
+                                       "Cocktail"
+                                       ],
+                            "minVal": null,
+                            "maxVal": null
+                            },
+                            {
+                            "filterType": "designer",
+                            "name": "designer",
+                            "id": "-1",
+                            "valueIds": [
+                                         6,
+                                         7,
+                                         13,
+                                         19,
+                                         1,
+                                         21,
+                                         18
+                                         ],
+                            "values": [
+                                       "Nina Ricci",
+                                       "Gucci",
+                                       "BCBGeneration",
+                                       "Krishna Mehta",
+                                       "Aarti Gupta",
+                                       "Rohit Khanna & Rahul Gandhi ",
+                                       "Chhavvi Aggarwal"
+                                       ],
+                            "minVal": null,
+                            "maxVal": null
+                            },
+                            {
+                            "filterType": "attribute",
+                            "name": "Trend",
+                            "id": "16",
+                            "valueIds": [
+                                         204,
+                                         198,
+                                         201
+                                         ],
+                            "values": [
+                                       "Lace",
+                                       "sequins/beads",
+                                       "pastels"
+                                       ],
+                            "minVal": null,
+                            "maxVal": null
+                            },
+                            {
+                            "filterType": "attribute",
+                            "name": "Color",
+                            "id": "3",
+                            "valueIds": [
+                                         20,
+                                         19,
+                                         26,
+                                         23,
+                                         17,
+                                         24,
+                                         18,
+                                         22,
+                                         13
+                                         ],
+                            "values": [
+                                       "#FFFF00",
+                                       "#FF8000",
+                                       "#E6E6E6",
+                                       "#5F04B4",
+                                       "#300A0A",
+                                       "#FF00FF",
+                                       "#B20F0F",
+                                       "#0040FF",
+                                       "#000000"
+                                       ],
+                            "minVal": null,
+                            "maxVal": null
+                            },
+                            {
+                            "filterType": "attribute",
+                            "name": "Style",
+                            "id": "8",
+                            "valueIds": [
+                                         61,
+                                         63
+                                         ],
+                            "values": [
+                                       "Classic",
+                                       "Feminine"
+                                       ],
+                            "minVal": null,
+                            "maxVal": null
+                            }
+                            ],
+        "productsInfo": [
+                         {
+                         "productId": 23,
+                         "productName": "Floral Earrings with Blue Beads",
+                         "originalPrice": 5800,
+                         "fourDayRentalPrice": 580,
+                         "eightDayRentalPrice": 870,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "SIZING\r\nLength 2\" Width 1\"",
+                         "productDetails": "Golden floral earrings detailed with blue stones and tiny crystals. Blue stone drop.\r\nClosure: Push back\r\nMATERIALS: Cz & Alloy",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "Gucci",
+                         "brandId": 7,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                231
+                                                                ],
+                                               "attrValues": [
+                                                              "free size"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 9,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Formality",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                66
+                                                                ],
+                                               "attrValues": [
+                                                              "casual- day"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  5,
+                                  7
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        2,
+                                        7
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "guccacss15oo00231",
+                                         "entityId": 73,
+                                         "productId": 23,
+                                         "depth": 1,
+                                         "sizeValueId": 231,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "guccacss15oo00232",
+                                         "entityId": 117,
+                                         "productId": 23,
+                                         "depth": 2,
+                                         "sizeValueId": 231,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": null,
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_1.jpg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_2.jpg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_3.jpg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_5.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_1-small.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_1-medium.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_1-large.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_1-thumbnail.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_2-small.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_2-medium.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_2-large.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_2-thumbnail.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_3-small.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_3-medium.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_3-large.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_3-thumbnail.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_5-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_5-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_5-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-23/product-23_5-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         },
+                         {
+                         "productId": 46,
+                         "productName": "Chiffon Saree",
+                         "originalPrice": 22400,
+                         "fourDayRentalPrice": 2240,
+                         "eightDayRentalPrice": 3360,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+                         "productDetails": "This chiffon yellow and orange blaze ombre saree with a machine embroidered border is perfect for an effortless evening look. Team this gorgeous piece with your favourite jewellery and a pair of heels.",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "Chhavvi Aggarwal",
+                         "brandId": 18,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                234,
+                                                                236
+                                                                ],
+                                               "attrValues": [
+                                                              "s",
+                                                              "l"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 3,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Color",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                20,
+                                                                19
+                                                                ],
+                                               "attrValues": [
+                                                              "#FFFF00",
+                                                              "#FF8000"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 15,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Fabric",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                175
+                                                                ],
+                                               "attrValues": [
+                                                              "chiffon"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  5,
+                                  7
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        1,
+                                        8
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "chavclss15oo00461",
+                                         "entityId": 177,
+                                         "productId": 46,
+                                         "depth": 1,
+                                         "sizeValueId": 234,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "chavclss15oo00462",
+                                         "entityId": 178,
+                                         "productId": 46,
+                                         "depth": 2,
+                                         "sizeValueId": 236,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": null,
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1.jpg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2.jpg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3.jpg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-small.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-medium.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-large.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-thumbnail.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-small.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-medium.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-large.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-thumbnail.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-small.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-medium.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-large.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-thumbnail.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         },
+                         {
+                         "productId": 16,
+                         "productName": "Navy temple design embroidered jacket lehenga set",
+                         "originalPrice": 21000,
+                         "fourDayRentalPrice": 2100,
+                         "eightDayRentalPrice": 3150,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+                         "productDetails": "Featuring a navy blue velvet jacket with 4 button closure front and embroidered cape sleeves. \r\nIt comes along with matching blue velvet lehenga with badla and zardosi work in temple design and shimmer border. \r\nFIT: Fitted at bust. \r\nCOMPOSITION: Velvet. \r\nCARE: Dryclean only.",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "Nina Ricci",
+                         "brandId": 6,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                239,
+                                                                240,
+                                                                241,
+                                                                242,
+                                                                243,
+                                                                244
+                                                                ],
+                                               "attrValues": [
+                                                              "US 0",
+                                                              "US2",
+                                                              "US4",
+                                                              "US6",
+                                                              "US8",
+                                                              "US10"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 16,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Trend",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                204
+                                                                ],
+                                               "attrValues": [
+                                                              "Lace"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 1,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Condition",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                1
+                                                                ],
+                                               "attrValues": [
+                                                              "New"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 3,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Color",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                26,
+                                                                23,
+                                                                17
+                                                                ],
+                                               "attrValues": [
+                                                              "#E6E6E6",
+                                                              "#5F04B4",
+                                                              "#300A0A"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 5,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Body Type",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                36
+                                                                ],
+                                               "attrValues": [
+                                                              "Full Bust"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 8,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Style",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                61
+                                                                ],
+                                               "attrValues": [
+                                                              "Classic"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 15,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Fabric",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                176,
+                                                                183,
+                                                                181
+                                                                ],
+                                               "attrValues": [
+                                                              "cotton",
+                                                              "jersey",
+                                                              "flannel"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  7
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        1,
+                                        9
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "niriless15oo00162",
+                                         "entityId": 98,
+                                         "productId": 16,
+                                         "depth": 2,
+                                         "sizeValueId": 239,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "niriless15oo00163",
+                                         "entityId": 99,
+                                         "productId": 16,
+                                         "depth": 3,
+                                         "sizeValueId": 240,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "niriless15oo00164",
+                                         "entityId": 100,
+                                         "productId": 16,
+                                         "depth": 4,
+                                         "sizeValueId": 241,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "niriless15oo00165",
+                                         "entityId": 101,
+                                         "productId": 16,
+                                         "depth": 5,
+                                         "sizeValueId": 242,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "niriless15oo00166",
+                                         "entityId": 102,
+                                         "productId": 16,
+                                         "depth": 6,
+                                         "sizeValueId": 243,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "niriless15oo00167",
+                                         "entityId": 103,
+                                         "productId": 16,
+                                         "depth": 7,
+                                         "sizeValueId": 244,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": null,
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_1.jpg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_2.jpg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_3.jpg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_4.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_5.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_1-small.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_1-medium.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_1-large.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_1-thumbnail.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_2-small.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_2-medium.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_2-large.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_2-thumbnail.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_3-small.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_3-medium.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_3-large.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_3-thumbnail.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_4-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_4-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_4-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_4-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_5-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_5-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_5-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-16/product-16_5-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         },
+                         {
+                         "productId": 26,
+                         "productName": "Goldburst antique brown minaudiere clutch",
+                         "originalPrice": 11560,
+                         "fourDayRentalPrice": 1156,
+                         "eightDayRentalPrice": 1734,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+                         "productDetails": "Featuring a goldburst rectangular clutch in antique brown base highlighted by gold gota work in flower pattern. It has a top round clasp, detachable sling chain and is fully lined. \r\nCOMPOSITION: Metal, gota. \r\nCARE: Handle with care, store in waterproof bag, keep away from dust, not washable.\r\n",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "BCBGeneration",
+                         "brandId": 13,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                231
+                                                                ],
+                                               "attrValues": [
+                                                              "free size"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 17,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Made In",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                254
+                                                                ],
+                                               "attrValues": [
+                                                              "Spain"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 2,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Age",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                30
+                                                                ],
+                                               "attrValues": [
+                                                              "Late 20s"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 3,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Color",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                24
+                                                                ],
+                                               "attrValues": [
+                                                              "#FF00FF"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 8,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Style",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                61
+                                                                ],
+                                               "attrValues": [
+                                                              "Classic"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  7
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        2,
+                                        6
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "bcbgacss15oo00261",
+                                         "entityId": 76,
+                                         "productId": 26,
+                                         "depth": 1,
+                                         "sizeValueId": 231,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": null,
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_1.jpg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_2.jpg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_3.jpg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_5.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_6.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_7.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_1-small.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_1-medium.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_1-large.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_1-thumbnail.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_2-small.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_2-medium.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_2-large.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_2-thumbnail.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_3-small.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_3-medium.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_3-large.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_3-thumbnail.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_5-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_5-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_5-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_5-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_6-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_6-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_6-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_6-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_7-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_7-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_7-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-26/product-26_7-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         },
+                         {
+                         "productId": 29,
+                         "productName": "Purple applique work anarkali with gold lace cape",
+                         "originalPrice": 9120,
+                         "fourDayRentalPrice": 912,
+                         "eightDayRentalPrice": 1368,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim",
+                         "productDetails": "Featuring a purple base floor length anarkali in raw silk with gold and velvet applique work. \r\nIt comes along with gold cape with floral jaal work and purple churidaar. \r\nFIT: Fitted at bust. \r\nCOMPOSITION: Raw silk, lace. \r\nCARE: Dryclean only.\r\n",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "Krishna Mehta",
+                         "brandId": 19,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                242,
+                                                                243
+                                                                ],
+                                               "attrValues": [
+                                                              "US6",
+                                                              "US8"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 16,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Trend",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                198
+                                                                ],
+                                               "attrValues": [
+                                                              "sequins/beads"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 1,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Condition",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                1
+                                                                ],
+                                               "attrValues": [
+                                                              "New"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 3,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Color",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                18,
+                                                                22,
+                                                                26,
+                                                                24
+                                                                ],
+                                               "attrValues": [
+                                                              "#B20F0F",
+                                                              "#0040FF",
+                                                              "#E6E6E6",
+                                                              "#FF00FF"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 5,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Body Type",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                36
+                                                                ],
+                                               "attrValues": [
+                                                              "Full Bust"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 8,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Style",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                63
+                                                                ],
+                                               "attrValues": [
+                                                              "Feminine"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 15,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Fabric",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                188,
+                                                                189
+                                                                ],
+                                               "attrValues": [
+                                                              "satin",
+                                                              "silk"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  6
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        1,
+                                        8
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "krisclss15oo00295",
+                                         "entityId": 121,
+                                         "productId": 29,
+                                         "depth": 5,
+                                         "sizeValueId": 242,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "krisclss15oo00296",
+                                         "entityId": 122,
+                                         "productId": 29,
+                                         "depth": 6,
+                                         "sizeValueId": 243,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": [
+                                        2
+                                        ],
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1.jpeg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2.jpeg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3.jpeg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4.jpeg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-small.jpeg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-medium.jpeg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-large.jpeg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-thumbnail.jpeg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-small.jpeg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-medium.jpeg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-large.jpeg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-thumbnail.jpeg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-small.jpeg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-medium.jpeg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-large.jpeg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-thumbnail.jpeg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-small.jpeg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-medium.jpeg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-large.jpeg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-thumbnail.jpeg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         },
+                         {
+                         "productId": 37,
+                         "productName": "Anjelica Gown",
+                         "originalPrice": 19800,
+                         "fourDayRentalPrice": 1980,
+                         "eightDayRentalPrice": 2970,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "Fabric:?Georgette",
+                         "productDetails": "Featuring a breathtaking gown in ink blue with beautiful detailing with gotapatti work at the yoke and the back. Add a pair of danglers and an elegant clutch and let the world fall in love with you.",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "Aarti Gupta",
+                         "brandId": 1,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                234,
+                                                                236
+                                                                ],
+                                               "attrValues": [
+                                                              "s",
+                                                              "l"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 1,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Condition",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                1
+                                                                ],
+                                               "attrValues": [
+                                                              "New"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 16,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Trend",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                204,
+                                                                201
+                                                                ],
+                                               "attrValues": [
+                                                              "Lace",
+                                                              "pastels"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 3,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Color",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                13,
+                                                                22
+                                                                ],
+                                               "attrValues": [
+                                                              "#000000",
+                                                              "#0040FF"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 5,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Body Type",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                37,
+                                                                36
+                                                                ],
+                                               "attrValues": [
+                                                              "Hourglass",
+                                                              "Full Bust"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 8,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Style",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                63
+                                                                ],
+                                               "attrValues": [
+                                                              "Feminine"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 9,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Formality",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                69
+                                                                ],
+                                               "attrValues": [
+                                                              "formal-night"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 15,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Fabric",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                175
+                                                                ],
+                                               "attrValues": [
+                                                              "chiffon"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  7
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        1,
+                                        14
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "ag01clss15oo00371",
+                                         "entityId": 139,
+                                         "productId": 37,
+                                         "depth": 1,
+                                         "sizeValueId": 234,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "ag01clss15oo00372",
+                                         "entityId": 140,
+                                         "productId": 37,
+                                         "depth": 2,
+                                         "sizeValueId": 236,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": null,
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_1.jpg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_2.jpg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_3.jpg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_5.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_1-small.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_1-medium.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_1-large.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_1-thumbnail.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_2-small.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_2-medium.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_2-large.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_2-thumbnail.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_3-small.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_3-medium.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_3-large.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_3-thumbnail.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_5-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_5-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_5-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-37/product-37_5-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         },
+                         {
+                         "productId": 39,
+                         "productName": "Kingsley Gown",
+                         "originalPrice": 12345,
+                         "fourDayRentalPrice": 1234.5,
+                         "eightDayRentalPrice": 1851.75,
+                         "absoluteDiscount": 0,
+                         "discountedPercentage": 0,
+                         "salePrice": 0,
+                         "salePercentage": 0,
+                         "stylistNotes": "?Fabric:?Georgette",
+                         "productDetails": "Presenting a contemporary gown in powder blue. Pair this stunner with strappy heels, drop earrings and a clutch for that absolute glam quotient.\r\n",
+                         "shippingFee": 0,
+                         "insurance": 0,
+                         "brandName": "Rohit Khanna & Rahul Gandhi ",
+                         "brandId": 21,
+                         "status": 1,
+                         "linkedProductIds": null,
+                         "productAttributes": [
+                                               {
+                                               "attributeId": 4,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Size",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                235
+                                                                ],
+                                               "attrValues": [
+                                                              "m"
+                                                              ]
+                                               },
+                                               {
+                                               "attributeId": 3,
+                                               "attributeValueId": 0,
+                                               "attributeValue": null,
+                                               "attributeName": "Color",
+                                               "status": 0,
+                                               "productId": 0,
+                                               "productAttributeId": 0,
+                                               "createdBy": 0,
+                                               "createdOn": null,
+                                               "modifiedBy": 0,
+                                               "modifiedOn": null,
+                                               "attrValueIds": [
+                                                                26,
+                                                                22
+                                                                ],
+                                               "attrValues": [
+                                                              "#E6E6E6",
+                                                              "#0040FF"
+                                                              ]
+                                               }
+                                               ],
+                         "tags": [
+                                  7
+                                  ],
+                         "occasions": [
+                                       4
+                                       ],
+                         "categories": [
+                                        1,
+                                        14
+                                        ],
+                         "productSKUs": [
+                                         {
+                                         "sku": "rkrgclss15oo00391",
+                                         "entityId": 149,
+                                         "productId": 39,
+                                         "depth": 1,
+                                         "sizeValueId": 235,
+                                         "isActive": 1
+                                         },
+                                         {
+                                         "sku": "rkrgclss15oo00392",
+                                         "entityId": 150,
+                                         "productId": 39,
+                                         "depth": 2,
+                                         "sizeValueId": 235,
+                                         "isActive": 1
+                                         }
+                                         ],
+                         "promocodes": null,
+                         "productImages": [
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_1.jpg",
+                                           "imageTag": "front",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_2.jpg",
+                                           "imageTag": "side",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_3.jpg",
+                                           "imageTag": "back",
+                                           "imageSize": null
+                                           },
+                                           {
+                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_5.jpg",
+                                           "imageTag": "",
+                                           "imageSize": null
+                                           }
+                                           ],
+                         "productResizeImages": [
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_1-small.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_1-medium.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_1-large.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_1-thumbnail.jpg",
+                                                 "imageTag": "front",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_2-small.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_2-medium.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_2-large.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_2-thumbnail.jpg",
+                                                 "imageTag": "side",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_3-small.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_3-medium.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_3-large.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_3-thumbnail.jpg",
+                                                 "imageTag": "back",
+                                                 "imageSize": "thumbnail"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_5-small.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "small"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_5-medium.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "medium"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_5-large.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "large"
+                                                 },
+                                                 {
+                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-39/product-39_5-thumbnail.jpg",
+                                                 "imageTag": "",
+                                                 "imageSize": "thumbnail"
+                                                 }
+                                                 ]
+                         }
+                         ],
+        "pagesCount": 1,
+        "productsCount": 7
+    }
+}

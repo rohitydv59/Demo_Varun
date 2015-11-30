@@ -1,0 +1,174 @@
+{
+    "status": "SUCCESS",
+    "statusCode": 200,
+    "message": "Request Served Successfully",
+    "description": null,
+    "data": [
+             {
+             "sliderId": 13,
+             "sliderType": 7,
+             "headerText": "Occasion",
+             "headerFontSize": 24,
+             "middleText": "match the right dress for each occasion",
+             "middleFontSize": 14,
+             "bottomText": "",
+             "bottomFontSize": 0,
+             "imageName": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/occasions/occasion_1447155828179.jpg",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/occasions/occasion_1447155828179-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/occasions/occasion_1447155828179-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/occasions/occasion_1447155828179-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "sliderTypeVal": "Occasions",
+             "itemId": "-1",
+             "itemName": "Occasions",
+             "children": [
+                          "-1:All:allOccasion",
+                          "1:Engagement:engagement",
+                          "4:Cocktail:cocktail",
+                          "6:Reception:reception",
+                          "7:Night Out:engagement",
+                          "8:Date Night:cocktail",
+                          "9:Valentine's Day:reception",
+                          "10:Prom Night:engagement",
+                          "11:Christmas:cocktail",
+                          "12:New Year:reception",
+                          "17:Wear at Work:engagement",
+                          "19:Wedding :cocktail"
+                          ]
+                         },
+             {
+             "sliderId": 12,
+             "sliderType": 6,
+             "headerText": "Clothing ",
+             "headerFontSize": 24,
+             "middleText": "choose indian or western wear ",
+             "middleFontSize": 14,
+             "bottomText": "",
+             "bottomFontSize": 0,
+             "imageName": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-1/category_1_1447155818061.jpg",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-1/category_1_1447155818061-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-1/category_1_1447155818061-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-1/category_1_1447155818061-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "sliderTypeVal": "Categories",
+             "itemId": "1",
+             "itemName": "Clothing",
+             "children": [
+                          "1:All:allClothing",
+                          "8:Saree:saree",
+                          "9:Lenghas:engagement",
+                          "10:Salwar Suit:cocktail",
+                          "11:Bodycon:reception",
+                          "12:shift:saree",
+                          "13:Cocktail Dress:engagement",
+                          "14:Gowns:cocktail",
+                          "15:Tunics:reception"
+                          ]
+                        },
+             {
+             "sliderId": 16,
+             "sliderType": 6,
+             "headerText": "Accessories ",
+             "headerFontSize": 24,
+             "middleText": "look for bags, jewelry and more",
+             "middleFontSize": 14,
+             "bottomText": "",
+             "bottomFontSize": 0,
+             "imageName": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-2/category_2_1447155846605.jpg",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-2/category_2_1447155846605-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-2/category_2_1447155846605-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-2/category_2_1447155846605-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "sliderTypeVal": "Categories",
+             "itemId": "2",
+             "itemName": "Accessories",
+             "children": [
+                          "2:All:allAccessories",
+                          "7:Jewelry:cocktail",
+                          "6:Bags:reception"
+                          ]
+                         },
+             {
+             "sliderId": 14,
+             "sliderType": 5,
+             "headerText": "Designers",
+             "headerFontSize": 24,
+             "middleText": "search for your favourite designer ",
+             "middleFontSize": 14,
+             "bottomText": "",
+             "bottomFontSize": 0,
+             "imageName": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/brands/brand_1447155873658.jpg",
+             "resizedImages": [
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/brands/brand_1447155873658-small.jpg",
+                               "imageSize": "small"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/brands/brand_1447155873658-medium.jpg",
+                               "imageSize": "medium"
+                               },
+                               {
+                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/brands/brand_1447155873658-thumbnail.jpg",
+                               "imageSize": "thumbnail"
+                               }
+                               ],
+             "sliderTypeVal": "Designers",
+             "itemId": "-1",
+             "itemName": "Designers",
+             "children": [
+                          "-1:All:allClothing",
+                          "1:Aarti Gupta:allOccasion",
+                          "2:Rohit Bal:engagement",
+                          "6:Nina Ricci:cocktail",
+                          "7:Gucci:reception",
+                          "8:Anita Dhongre:saree",
+                          "9:Sondra Roberts:allClothing",
+                          "10:Badgley Mischka:allAccessories",
+                          "11:Pernia Qureshi:allOccasion",
+                          "12:Surabhi Arya:engagement",
+                          "13:BCBGeneration:cocktail",
+                          "14:JJ Vallaya:reception",
+                          "15:anju modi:saree",
+                          "16:sabyasaachi:allClothing",
+                          "17:Priyal Prakash:allAccessories",
+                          "18:Chhavvi Aggarwal:classicLehnga",
+                          "19:Krishna Mehta:dateNight",
+                          "20:Sonaakshi Raaj:allClothing",
+                          "21:Rohit Khanna & Rahul Gandhi :engagement",
+                          "22:Manish Malhotra:reception",
+                          "24:Tarun Tahiliani :cocktail",
+                          "25:Namrata Joshipura :saree"
+                          ]
+             }
+             ]
+}

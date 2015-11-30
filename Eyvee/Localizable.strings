@@ -1,0 +1,76 @@
+/* 
+  Localizable.strings
+  Eyvee
+
+  Created by Neetika Mittal on 12/08/15.
+  Copyright (c) 2015 Neetika Mittal. All rights reserved.
+*/
+
+"reserve_now_btn_text" = "BUY NOW";
+"save_btn_text" = "Save";
+"share_btn_text" = "SHARE";
+"filter_btn_text" = "Filter";
+"sort_btn_text" = "Sort";
+
+// connection errors
+
+"time_out_err" = "wow, this still happens? Sorry, we’ll fix this ASAP";
+"internet_stopped_working" = "WHAT The? Internet, you failed us… check your settings and try again";
+"no_internet_conn" = "Yikes! looks like you have no network, check your network setting and try again";
+
+"download_failed" = "honestly I don’t know why this happened. If I were you, I’d recheck my connection settings and try again";
+"incorrect_mob_no" = "eyvee is unable to verify your mobile number, would you like to try again";
+"incorrect_pin" = "hmmm, we are unable to recognise your PIN, did you input the right one? #justsaying";
+"area_outside_delivery" = "so… this is awkward, we currenty don’t support your location but if you give us your email id, we’ll let you know the moment we are live"; // add link to mail
+"login_err" = "hmmm…we are not the pearly gates of heaven, you should be able to get in easily, want to give it another shot?";
+"incorrect_pwd_err" = "yes, its incorrect. I urge you to recheck your password";
+
+// messages
+
+"waiting_for_app_load" = "like all classy ladies, we take a bit of time to get ready. Hang on for just a bit while we powder our nose and clean up our closet";
+"empty_cart" = "hey there, an empty cart is like an empty heart. fill your cart with joy… err, we meant fill your cart with clothes and your heart with joy";
+"empty_wishlist" = "honestly your wishlist is empty";
+"no_products" = "so… this is awkward, we dont have any products to show here.";
+"empty_addressList" = "It looks you haven't added any addresses yet.";
+"empty_pincode" = "Please enter a valid pincode.";
+
+"filtered_search_res_low" = "it had to happen, you clicked on to many filters… head back and uncheck a few to see more results";
+"no_search_res" = "this is odd, we promise our closet is full of stuff that you’d want. Want to try once more?";
+"not_logged_in" = "please log in, it only take a minute. thank you";
+"insufficent_details_on_signup" = "hang on, you forgot to sign in";
+"checkout_insufficent_info" = "thus far and no more. We really need your details to proceed with checkout";
+"incorrect_promo_code_err" = "looks like the promo code is not valid, try again?";
+"credit_card_err" = "are you sure this is a credit card? Our system doesn’t think so… want to try again?";
+
+
+
+"not_valid_email" = "honestly You forgot your email address too.";
+"password_sent" = "hurray, we sent an email so that you can reset your password";
+
+// pincode string
+"pincode_str" = "1. PINCODE helps us quickly determine the availability of the items for your shipping location\n\n2. We use PINCODE to figure out if certain locations are not supported for delivery or other locations have a faster or express shipment available.\n\n3. In case you want to change the PINCODE to check for another location, please checkout the existing items in your Bag, or clear the bag by removing the items";
+
+
+// invalid email
+"invalid_email" = "Please enter a valid email.";
+
+// filter name
+"fourdayrentalprice" = "fourdayrentalprice";
+"eightdayrentalprice" = "eightdayrentalprice";
+"Color" = "Color";
+"Size" = "Size";
+"occasion" = "occasion";
+"designer" = "designer";
+
+//change Password
+"passwrd_not_match" = "Yikes..the new passwords do not match";
+"oldPasswrd_not_entered" = "Yikes..you forgot to key in the old password";
+"newPasswrd_not_entered" = "Yikes..you forgot to key in the new password";
+"confirmPasswrd_not_entered" = "Yikes..you forgot to key in the confirm password";
+
+//on boarding constants
+"get_started_btn" = "GET STARTED";
+"onboard_main_lbl" = "eyvee";
+"rent_btn" = "RENT";
+"wear_btn" = "WEAR";
+"return_btn" = "RETURN";
