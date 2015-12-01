@@ -119,13 +119,13 @@
     }
     NSString * pincode = [[EYUtility shared] getPinCode];
     NSLog(@"pincode - %@",pincode);
-    if (pincode) {
-        _addressModel.pincode = pincode;
-        [self fetchShippingDetailsWithCompletionBlock:^(bool success, EYError *error) {
-            [self initializeBottomViewAndTableView];
-        }];
-    }
-    else
+//    if (pincode) {
+//        _addressModel.pincode = pincode;
+//        [self fetchShippingDetailsWithCompletionBlock:^(bool success, EYError *error) {
+//            [self initializeBottomViewAndTableView];
+//        }];
+//    }
+//    else
     {
         [self initializeBottomViewAndTableView];
     }
@@ -463,7 +463,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"City" andPlaceholderText:@""];
             
             return cell;
@@ -485,7 +485,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"State" andPlaceholderText:@""];
             
             return cell;
@@ -507,7 +507,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"Country" andPlaceholderText:@""];
             
             return cell;
@@ -537,8 +537,6 @@
     }
     else if (indexPath.section == 2)
     {
-
-        
         NSString *identifier = @"switchViewCell";
         EYCustomAccessoryViewCell* cell = [tableView dequeueReusableCellWithIdentifier:identifier];
         if (!cell)
@@ -898,8 +896,8 @@
     {
         _addressModel.pincode = text;
         if (text.length == 6) {
-            [textField resignFirstResponder];
-            [self fetchShippingDetailsWithCompletionBlock:nil];
+//            [textField resignFirstResponder];
+//            [self fetchShippingDetailsWithCompletionBlock:nil];
         }
         else if (text.length > 6)
             return NO;
@@ -921,7 +919,7 @@
          _addressModel.billingAddress.pincode = text;
         if (text.length == 6) {
             [textField resignFirstResponder];
-            [self fetchBillingDetails];
+//            [self fetchBillingDetails];
         }
         else if (text.length > 6)
             return NO;

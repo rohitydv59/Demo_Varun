@@ -618,14 +618,18 @@ static NSString * const reuseIdentifier = @"Cell";
     {
         [temparr addObject:info.productId];
     }
-    NSArray * selectedFavCellIdsArray = [[EYWishlistModel sharedManager] getWishlistProductIdsLocally];
-    //[EYWishlistModel sharedManager].productIdsArray;
-    if ([selectedFavCellIdsArray containsObject:productModel.productId])
+    if([[EYAccountManager sharedManger] isUserLoggedIn])
     {
-        [cell.favBtn setSelected:true];
+        NSArray * selectedFavCellIdsArray = [[EYWishlistModel sharedManager] getWishlistProductIdsLocally];
+        //[EYWishlistModel sharedManager].productIdsArray;
+        if ([selectedFavCellIdsArray containsObject:productModel.productId])
+        {
+            [cell.favBtn setSelected:true];
+        }
+        else
+            [cell.favBtn setSelected:false];
+
     }
-    else
-        [cell.favBtn setSelected:false];
     
     
     for (EYProductResizeImages * productResizeImage in productModel.productResizeImages)

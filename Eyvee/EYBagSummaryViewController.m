@@ -610,7 +610,9 @@
 
 - (void)userSignUpSuccessful
 {
-    [self fetchUserAddressesAndPushRequiredController];
+    [self.navigationController popViewControllerAnimated:YES];
+
+//    [self fetchUserAddressesAndPushRequiredController];
 }
 
 - (void)fetchUserAddressesAndPushRequiredController
