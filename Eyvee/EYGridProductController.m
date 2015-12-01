@@ -208,10 +208,12 @@ static NSString * const reuseIdentifier = @"Cell";
     
     if (model.wishlistRequestState == wishlistRequestInProcess || model.wishlistRequestState == wishlistRequestError || model.wishlistRequestState == wishlistRequestNeedToSend) {
         self.loader.hidden = NO;
-        [[EYWishlistModel sharedManager] getWishlistItemsWithCompletionBlock:^(id responseObject, EYError *error) {
-            self.loader.hidden = YES;
-            [weakself processWishListResponse:responseObject withError:error];
-        }];
+        [weakself processWishListResponse:nil withError:nil];
+
+//        [[EYWishlistModel sharedManager] getWishlistItemsWithCompletionBlock:^(id responseObject, EYError *error) {
+//            self.loader.hidden = YES;
+//            [weakself processWishListResponse:responseObject withError:error];
+//        }];
     }
     else
     {
@@ -608,7 +610,14 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.productImgView.image = nil;
     
     [cell.favBtn setTag:indexPath.row];
-    NSArray * selectedFavCellIdsArray = [EYWishlistModel sharedManager].productIdsArray;
+    EYGetAllProductsMTLModel *allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+    NSMutableArray *temparr = [[NSMutableArray alloc] init];
+    for (EYProductsInfo * info in allProducts.productsInfo)
+    {
+        [temparr addObject:info.productId];
+    }
+    NSArray * selectedFavCellIdsArray = [[EYWishlistModel sharedManager] getWishlistProductIdsLocally];
+    //[EYWishlistModel sharedManager].productIdsArray;
     if ([selectedFavCellIdsArray containsObject:productModel.productId])
     {
         [cell.favBtn setSelected:true];
@@ -661,32 +670,64 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)addingIntoWishlist:(EYProductsInfo *)product
 {
-    NSMutableArray *arr;
-    if([EYWishlistModel sharedManager].productIdsArray.count)
+    NSMutableArray *allProductsArray ;
+    EYGetAllProductsMTLModel *allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+    if (allProducts) 
     {
-        arr = [NSMutableArray arrayWithArray:[EYWishlistModel sharedManager].productIdsArray];
-       
-    }
-    else
-    {
-        arr = [[NSMutableArray alloc]init];
-        [EYWishlistModel sharedManager].productIdsArray = [[NSArray alloc]init];
+        NSArray * productIdArr = [[EYWishlistModel sharedManager] getWishlistProductIdsLocally];
+        NSMutableArray * newProductInfoArray = [[NSMutableArray alloc] init];
         
-    }
-    [arr addObject:product.productId];
-    [EYWishlistModel sharedManager].productIdsArray = arr;
-    
-    EYAllWishlistMtlModel *allWishlist=[[EYWishlistModel sharedManager]wishlistModel];
-    
-    if (allWishlist.allWishlists.count)
-    {
-       allWishlist.allWishlists
+        {
+            for (EYProductsInfo * info in allProducts.productsInfo)
+            {
+                if ([productIdArr containsObject:info.productId])
+                {
+                    [newProductInfoArray addObject:info];
+                }
+            }
+            
+        }
+        
+        allProducts.productsInfo = newProductInfoArray;
+        allProductsArray = [allProducts.productsInfo mutableCopy];
     }
     else
     {
-        allWishlist = [[EYAllWishlistMtlModel alloc]init];
+        allProducts = [[EYGetAllProductsMTLModel alloc]init];
+        allProductsArray = [[NSMutableArray alloc] init];
     }
     
+    [allProductsArray addObject:product];
+    allProducts.productsInfo = [allProductsArray mutableCopy];
+    [[EYWishlistModel sharedManager] saveWishListLocally:allProducts];
+    
+    NSMutableArray * tempArr = [[[EYWishlistModel sharedManager] getWishlistProductIdsLocally] mutableCopy];
+    if (tempArr.count <= 0)
+    {
+        tempArr = [[NSMutableArray alloc] init];
+    }
+    for (EYProductsInfo * info in allProducts.productsInfo)
+    {
+        [tempArr addObject:info.productId];
+    }
+    if (tempArr.count > 0)
+    {
+        [EYWishlistModel sharedManager].productIdsArray = tempArr;
+    }
+    [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:tempArr];
+    
+    [_collectionView reloadData];
+}
+
+- (void)deletingFromWishlist:(EYProductsInfo *)product
+{
+    [EYUtility showHUDWithTitle:@"Deleting"];
+    
+    __weak typeof (self) weakSelf = self;
+//    [[EYAllAPICallsManager sharedManager] deleteProductsFromWishlistWithParameters:@{@"productId":product.productId} withRequestPath:kRemoveSingleProductFromWishlistRequestPath cache:NO withCompletionBlock:^(BOOL responseSuccess, EYError *error)
+     {
+         [weakSelf processDeleteProductsFromWishlist:nil withError:nil andProduct:product];
+     };
 }
 
 
@@ -950,9 +991,7 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     if ([[EYAccountManager sharedManger] isUserLoggedIn] == NO)
     {
-       
         [self openSignUpBeforeWishlist];
-        
     }
     else
     {
@@ -1050,16 +1089,6 @@ static NSString * const reuseIdentifier = @"Cell";
 }
 
 
-- (void)deletingFromWishlist:(EYProductsInfo *)product
-{
-    [EYUtility showHUDWithTitle:@"Deleting"];
-
-    __weak typeof (self) weakSelf = self;
-    [[EYAllAPICallsManager sharedManager] deleteProductsFromWishlistWithParameters:@{@"productId":product.productId} withRequestPath:kRemoveSingleProductFromWishlistRequestPath cache:NO withCompletionBlock:^(BOOL responseSuccess, EYError *error)
-     {
-         [weakSelf processDeleteProductsFromWishlist:responseSuccess withError:error andProduct:product];
-     }];
-}
 
 - (void)userSignInSuccessfulWithAccountController:(EYAccountController *)account
 {
@@ -1076,9 +1105,9 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)processWishListResponse:(id)responseObject withError:(EYError *)error
 {
     if (!error) {
-        EYGetAllProductsMTLModel *allProductsModel = responseObject;
+        EYGetAllProductsMTLModel *allProductsModel = [[EYWishlistModel sharedManager] getWishlistLocally];
         _productsInfoArray = [NSMutableArray arrayWithArray:allProductsModel.productsInfo];
-            if (_productsInfoArray.count == 0)
+        if (_productsInfoArray.count == 0)
         {
             [self showEmptyViewWithMessage:NSLocalizedString(@"empty_wishlist", @"") withImage:nil andRetryBtnHidden:YES];
         }
@@ -1089,6 +1118,27 @@ static NSString * const reuseIdentifier = @"Cell";
                 [self.emptyView removeFromSuperview];
                 self.emptyView = nil;
             }
+            
+            NSArray * productIdArr = [[EYWishlistModel sharedManager] getWishlistProductIdsLocally];
+            NSMutableArray * newProductInfoArray = [[NSMutableArray alloc] init];
+
+            for (EYProductsInfo * info in _productsInfoArray)
+            {
+                if ([productIdArr containsObject:info.productId])
+                {
+                    [newProductInfoArray addObject:info];
+                }
+            }
+            
+            allProductsModel.productsInfo = newProductInfoArray;
+            _productsInfoArray = newProductInfoArray;
+            [[EYWishlistModel sharedManager] saveWishListLocally:allProductsModel];
+            
+            if (_productsInfoArray.count == 0)
+            {
+                [self showEmptyViewWithMessage:NSLocalizedString(@"empty_wishlist", @"") withImage:nil andRetryBtnHidden:YES];
+            }
+
             [self.collectionView reloadData];
 
         }
@@ -1181,28 +1231,54 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)processDeleteProductsFromWishlist:(BOOL)responseSuccess withError:(EYError *)error andProduct:(EYProductsInfo *)product
 {
     [EYUtility hideHUD];
-    if (!error && responseSuccess)
+//    if (!error && responseSuccess)
     {
         if (_productCategory == GETProductsFromWishlist)                                                             //for fourth tab
         {
-            NSMutableArray * array = [[NSMutableArray alloc] initWithArray:_productsInfoArray];
+            EYGetAllProductsMTLModel * allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+            NSMutableArray * array = [allProducts.productsInfo mutableCopy];
             if ([array containsObject:product])
             {
                 [array removeObject:product];
-                _productsInfoArray = [[NSMutableArray alloc] initWithArray:array];
+                allProducts.productsInfo = array ;
+                [[EYWishlistModel sharedManager] saveWishListLocally:allProducts];
             }
             
+            _productsInfoArray = [allProducts.productsInfo mutableCopy];
             if (_productsInfoArray.count <=0)
             {
                 [self showEmptyViewWithMessage:NSLocalizedString(@"no_products", @"") withImage:nil andRetryBtnHidden:YES];
             }
+            
+            NSMutableArray * productarray = [[[EYWishlistModel sharedManager] getWishlistProductIdsLocally] mutableCopy];
+            NSMutableArray * newProductarray = [[NSMutableArray alloc] init];
+
+            for (EYProductsInfo * info in _productsInfoArray)
+            {
+                [newProductarray addObject:info.productId];
+            }
+            
+            productarray = newProductarray;
+            [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:productarray];
+        }
+        else
+        {
+//            EYGetAllProductsMTLModel * allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+            NSMutableArray * array = [[[EYWishlistModel sharedManager] getWishlistProductIdsLocally] mutableCopy];
+            if ([array containsObject:product.productId])
+            {
+                [array removeObject:product.productId];
+                [EYWishlistModel sharedManager].productIdsArray = array;
+                [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:array];
+            }
         }
         [self.collectionView reloadData];
     }
-    else
-    {
-        [EYUtility showAlertView:error.errorMessage];
-    }
+    
+//    else
+//    {
+//        [EYUtility showAlertView:error.errorMessage];
+//    }
 }
 
 - (void)processUpdateWishlist:(id)responseObject withError :(EYError *)error

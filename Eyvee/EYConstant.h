@@ -113,6 +113,7 @@ typedef enum
 
 //saving wishlist locally
 #define kLocalWishlistKey @"wishlistLocal"
+#define kLocalWishlistProductIdsKey @"wishlistproductIdsLocal"
 
 
 //login keys

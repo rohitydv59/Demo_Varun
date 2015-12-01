@@ -140,18 +140,34 @@
 }
 
 
-- (void)saveWishListLocally:(EYUserWishlistMtlModel *)wishlistModel
+- (void)saveWishListLocally:(EYGetAllProductsMTLModel *)wishlistModel
 {
     NSData *data = [NSKeyedArchiver archivedDataWithRootObject:wishlistModel];
     [[NSUserDefaults standardUserDefaults] setObject:data forKey:kLocalWishlistKey];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (EYUserWishlistMtlModel *)getWishlistLocally
+- (EYGetAllProductsMTLModel *)getWishlistLocally
 {
     NSData * modelData = [[NSUserDefaults standardUserDefaults] objectForKey:kLocalWishlistKey];
-    EYUserWishlistMtlModel * aModel = [NSKeyedUnarchiver unarchiveObjectWithData:modelData];
+    EYGetAllProductsMTLModel * aModel = [NSKeyedUnarchiver unarchiveObjectWithData:modelData];
     return aModel;
+}
+
+- (void)saveWishListProductIdsLocally:(NSArray *)wishListProductIdsArray
+{
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:wishListProductIdsArray];
+    [[NSUserDefaults standardUserDefaults] setObject:data forKey:kLocalWishlistProductIdsKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+
+}
+
+- (NSArray *)getWishlistProductIdsLocally
+{
+    NSData * modelData = [[NSUserDefaults standardUserDefaults] objectForKey:kLocalWishlistProductIdsKey];
+    NSArray * aModel = [NSKeyedUnarchiver unarchiveObjectWithData:modelData];
+    return aModel;
+
 }
 
 

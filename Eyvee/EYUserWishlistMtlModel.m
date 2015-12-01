@@ -22,6 +22,16 @@
 {
     return [MTLJSONAdapter arrayTransformerWithModelClass:[EYUserWishlistMtlModel class]];
 }
+
+- (void) encodeWithCoder:(NSCoder *)encoder {
+    [encoder encodeObject:_allWishlists forKey:@"allWishlists"];
+}
+
+- (id)initWithCoder:(NSCoder *)decoder {
+    _allWishlists = [decoder decodeObjectForKey:@"allWishlists"];
+    return self;
+}
+
 @end
 @implementation EYUserWishlistMtlModel
 

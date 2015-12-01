@@ -34,7 +34,10 @@ typedef enum {
 - (void)updateProductIdsOfWishlistWithCompletionBlock:(void(^)(id responseObject, EYError *error))completionBlock;
 - (void)getWishlistItemsWithCompletionBlock:(void(^)(id responseObject,EYError * error))completionBlock;
 
-- (void)saveWishListLocally:(EYUserWishlistMtlModel *)wishlistModel;
-- (EYUserWishlistMtlModel *)getWishlistLocally;
+- (void)saveWishListLocally:(EYGetAllProductsMTLModel *)wishlistModel;
+- (EYGetAllProductsMTLModel *)getWishlistLocally;
+
+- (void)saveWishListProductIdsLocally:(NSArray *)wishListProductIdsArray;
+- (NSArray *)getWishlistProductIdsLocally;
 
 @end
