@@ -113,6 +113,8 @@
 
 - (IBAction)signUpBtnTapped:(id)sender
 {
+    return;
+    
     [self.view endEditing:YES];
     
     NSString *email = self.emailTf.text;
