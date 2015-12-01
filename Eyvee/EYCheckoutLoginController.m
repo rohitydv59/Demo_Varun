@@ -123,31 +123,43 @@
         return;
     }
     
-    if (!email.isValidEmail) {
-        [EYUtility showAlertView:@"Oops!" message:NSLocalizedString(@"invalid_email", @"")];
-        return;
-    }
-    
     if (pwd.length == 0) {
         [EYUtility showAlertView:@"Oops!" message:@"Password is required."];
         return;
     }
     
+    [EYUtility showHUDWithTitle:nil];
     NSDictionary *payload = @{
                               @"emailId": email,
                               @"password": pwd,
                               @"isFb": @"false"
                               };
-    [EYUtility showHUDWithTitle:nil];
-    
-    __weak typeof (self) weakSelf = self;
-    [[EYAccountManager sharedManger]loginUserForParams:nil andPayload:payload withCompletionBlock:^(bool success, EYError *error) {
-        [weakSelf processLogin:success withError:error];
-    }];
 
-
+    [self performSelector:@selector(checkingLogin:) withObject:payload afterDelay:1.5];
 }
 
+-(void) checkingLogin:(NSDictionary *) payload
+{
+    [EYUtility hideHUD];
+    NSString * email = [payload objectForKey:@"emailId"];
+    NSString * pwd = [payload objectForKey:@"password"];
+    if ([email isEqualToString:@"user123@gmail.com"]&& [pwd isEqualToString:@"user123"])
+    {
+
+        __weak typeof (self) weakSelf = self;
+        [[EYAccountManager sharedManger]loginUserForParams:nil andPayload:payload withCompletionBlock:^(bool success, EYError *error) {
+            [weakSelf processLogin:success withError:error];
+        }];
+        
+    }
+    else
+    {
+        [EYUtility showAlertView:@"Oops!" message:@"incorrect login."];
+        return;
+        
+    }
+
+}
 - (IBAction)loginWithFacebookBtnTapped:(id)sender
 {
     [self.view endEditing:YES];

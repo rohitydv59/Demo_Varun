@@ -182,6 +182,7 @@
         {
             cell.rowLabel.text = _valuesInMeSection[indexPath.row];
             cell.leftImage.image = [[UIImage imageNamed:_imagesInMeSection[indexPath.row]] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+            
         }
         else //About Us Section
         {
@@ -276,17 +277,17 @@
         {
             if (indexPath.row == 0)
             {
-                EYMyOrdersViewController *orderVC = [[EYMyOrdersViewController alloc]initWithNibName:nil bundle:nil];
-                [[NSNotificationCenter defaultCenter] postNotificationName:kTabbarHideNotification object:nil];
-                [self.navigationController pushViewController:orderVC animated:YES];
+//                EYMyOrdersViewController *orderVC = [[EYMyOrdersViewController alloc]initWithNibName:nil bundle:nil];
+//                [[NSNotificationCenter defaultCenter] postNotificationName:kTabbarHideNotification object:nil];
+//                [self.navigationController pushViewController:orderVC animated:YES];
                 
             }
             else if (indexPath.row == 1)
             {
-                EYAllAddressVC *allAddress = [[EYAllAddressVC alloc]initWithNibName:nil bundle:nil];
-                allAddress.comingFromMode = comingFromMeMode;
-                [[NSNotificationCenter defaultCenter] postNotificationName:kTabbarHideNotification object:nil];
-                [self.navigationController pushViewController:allAddress animated:YES];
+//                EYAllAddressVC *allAddress = [[EYAllAddressVC alloc]initWithNibName:nil bundle:nil];
+//                allAddress.comingFromMode = comingFromMeMode;
+//                [[NSNotificationCenter defaultCenter] postNotificationName:kTabbarHideNotification object:nil];
+//                [self.navigationController pushViewController:allAddress animated:YES];
                 
             }
             else if (indexPath.row == 2)

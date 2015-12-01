@@ -168,17 +168,24 @@
     NSString *string = [NSString stringWithFormat:@"%@",[EYAccountManager sharedManger].loggedInUser.userId];
     NSMutableDictionary *payload = [NSMutableDictionary new];
     if (self.email) {
-        [payload setObject:self.email forKey:@"emailId"];
+        [payload setObject:self.email forKey:kEmailIdKey];
     }
     if (self.fullName) {
-        [payload setObject:self.fullName forKey:@"fullName"];
+        [payload setObject:self.fullName forKey:kFullNameKey];
     }
     if (self.phoneNumber) {
-        [payload setObject:self.phoneNumber forKey:@"contactNo"];
+        [payload setObject:self.phoneNumber forKey:kContactNoKey];
     }
-    [payload setObject:string forKey:@"userId"];
+    [payload setObject:string forKey:kUserId];
     
     [EYUtility showHUDWithTitle:nil];
+    
+    [self performSelector:@selector(updateProfile:) withObject:payload afterDelay:1.0];
+
+}
+
+-(void) updateProfile:(NSDictionary *) payload
+{
     [[EYAccountManager sharedManger]updateUserProfileWithParams:nil andPayload:payload withCompletionBlock:^(bool success, EYError *error) {
         [EYUtility hideHUD];
         if (error) {
@@ -187,7 +194,7 @@
         else
         {
             //[EYUtility showAlertView:@"Successfull"];
-
+            
             if ([_delegate respondsToSelector:@selector(updateProfileSuccessful)]) {
                 [_delegate updateProfileSuccessful];
             }
@@ -195,6 +202,7 @@
                 [self.navigationController popViewControllerAnimated:YES];
         }
     }];
+
 }
 
 #pragma mark - UITextfieldDelegates -

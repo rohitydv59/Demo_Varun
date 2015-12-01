@@ -164,22 +164,22 @@
 
 - (void)makeRequiredCalls
 {
-    EYCartModel * cartManager = [EYCartModel sharedManager];
-    cartManager.cartRequestState = cartRequestNeedToSend;
-    [EYUtility showHUDWithTitle:nil];
-
-    [cartManager getCartItemsWithCompletionBlock:^(id responseObject, EYError *error) {
-        [EYUtility hideHUD];
-        [self updateProductIdsWithCompletionBlock:^(bool success, EYError *error) {
-            
-            EYWishlistModel *wishlistModel = [EYWishlistModel sharedManager];
-            wishlistModel.wishlistRequestState = wishlistRequestNeedToSend;
-            [wishlistModel  getWishlistItemsWithCompletionBlock:nil];
-            
+//    EYCartModel * cartManager = [EYCartModel sharedManager];
+//    cartManager.cartRequestState = cartRequestNeedToSend;
+//    [EYUtility showHUDWithTitle:nil];
+//
+//    [cartManager getCartItemsWithCompletionBlock:^(id responseObject, EYError *error) {
+//        [EYUtility hideHUD];
+//        [self updateProductIdsWithCompletionBlock:^(bool success, EYError *error) {
+//            
+//            EYWishlistModel *wishlistModel = [EYWishlistModel sharedManager];
+//            wishlistModel.wishlistRequestState = wishlistRequestNeedToSend;
+//            [wishlistModel  getWishlistItemsWithCompletionBlock:nil];
+//            
             [self goToRequiredController];
-        }];
-    
-    }];
+//        }];
+//    
+//    }];
     
 
 }

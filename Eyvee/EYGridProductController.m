@@ -201,25 +201,27 @@ static NSString * const reuseIdentifier = @"Cell";
     }
     
     _productsInfoArray = nil;
-    
-    __weak typeof (self) weakself = self;
+    [self performSelector:@selector(fetchWishlistAfterDelay) withObject:nil afterDelay:0];
 
+}
+
+
+-(void) fetchWishlistAfterDelay
+{
+    __weak typeof (self) weakself = self;
     EYWishlistModel * model = [EYWishlistModel sharedManager];
     
+    
     if (model.wishlistRequestState == wishlistRequestInProcess || model.wishlistRequestState == wishlistRequestError || model.wishlistRequestState == wishlistRequestNeedToSend) {
-        self.loader.hidden = NO;
+        self.loader.hidden = YES;
         [weakself processWishListResponse:nil withError:nil];
-
-//        [[EYWishlistModel sharedManager] getWishlistItemsWithCompletionBlock:^(id responseObject, EYError *error) {
-//            self.loader.hidden = YES;
-//            [weakself processWishListResponse:responseObject withError:error];
-//        }];
     }
     else
     {
         self.loader.hidden = YES;
         [self processWishListResponse:model.allProductsInWishlist withError:nil];
     }
+
 }
 
 - (void)getDataWithSortIndex:(NSInteger)index
@@ -721,13 +723,63 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)deletingFromWishlist:(EYProductsInfo *)product
 {
-    [EYUtility showHUDWithTitle:@"Deleting"];
+    if (_productCategory == GETProductsFromWishlist)
+    {
+        [EYUtility showHUDWithTitle:@"Deleting"];
+        [self performSelector:@selector(deletionAfterDelay:) withObject:product afterDelay:.65];
+    }
+    else
+    {
+        [self performSelector:@selector(deletionAfterDelay:) withObject:product afterDelay:0];
+    }
     
-    __weak typeof (self) weakSelf = self;
-//    [[EYAllAPICallsManager sharedManager] deleteProductsFromWishlistWithParameters:@{@"productId":product.productId} withRequestPath:kRemoveSingleProductFromWishlistRequestPath cache:NO withCompletionBlock:^(BOOL responseSuccess, EYError *error)
-     {
-         [weakSelf processDeleteProductsFromWishlist:nil withError:nil andProduct:product];
-     };
+    
+}
+
+-(void)deletionAfterDelay:(EYProductsInfo *) product
+{
+    [EYUtility hideHUD];
+    {
+        if (_productCategory == GETProductsFromWishlist)                                                             //for fourth tab
+        {
+            EYGetAllProductsMTLModel * allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+            NSMutableArray * array = [allProducts.productsInfo mutableCopy];
+            if ([array containsObject:product])
+            {
+                [array removeObject:product];
+                allProducts.productsInfo = array ;
+                [[EYWishlistModel sharedManager] saveWishListLocally:allProducts];
+            }
+            
+            _productsInfoArray = [allProducts.productsInfo mutableCopy];
+            if (_productsInfoArray.count <=0)
+            {
+                [self showEmptyViewWithMessage:NSLocalizedString(@"no_products", @"") withImage:nil andRetryBtnHidden:YES];
+            }
+            
+            NSMutableArray * productarray = [[[EYWishlistModel sharedManager] getWishlistProductIdsLocally] mutableCopy];
+            NSMutableArray * newProductarray = [[NSMutableArray alloc] init];
+            
+            for (EYProductsInfo * info in _productsInfoArray)
+            {
+                [newProductarray addObject:info.productId];
+            }
+            
+            productarray = newProductarray;
+            [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:productarray];
+        }
+        else
+        {
+            NSMutableArray * array = [[[EYWishlistModel sharedManager] getWishlistProductIdsLocally] mutableCopy];
+            if ([array containsObject:product.productId])
+            {
+                [array removeObject:product.productId];
+                [EYWishlistModel sharedManager].productIdsArray = array;
+                [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:array];
+            }
+        }
+        [self.collectionView reloadData];
+    }
 }
 
 

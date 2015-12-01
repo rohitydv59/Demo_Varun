@@ -649,13 +649,58 @@
 
 - (void)addingIntoWishlist:(EYButtonWithRightImage *) button
 {
-    [EYUtility showHUDWithTitle:@"Adding"];
-    __weak typeof (self) weakSelf = self;
+    // for updating products Array
+    EYGetAllProductsMTLModel *allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+    NSMutableArray *arrayForAddingProduct;
+    if (allProducts)
+    {
+        if (allProducts.productsInfo.count)
+        {
+            arrayForAddingProduct = [allProducts.productsInfo mutableCopy];
+        }
+        else
+        {
+            arrayForAddingProduct = [[NSMutableArray alloc]init];
+        
+        }
+    }
+    else
+    {
+            allProducts = [[EYGetAllProductsMTLModel alloc]init];
+            arrayForAddingProduct = [[NSMutableArray alloc]init];
+        
+    }
+    [arrayForAddingProduct addObject:_productModelReceived];
+    allProducts.productsInfo = arrayForAddingProduct;
+    
+    [[EYWishlistModel sharedManager]saveWishListLocally:allProducts];
+    
+    //For updating product ids array
+    NSMutableArray *productIdsArray = [[[EYWishlistModel sharedManager]getWishlistProductIdsLocally] mutableCopy];
+    
+    if (productIdsArray.count)
+    {
+    }
+    else
+    {
+        productIdsArray = [[NSMutableArray alloc]init];
+    }
 
-    [[EYAllAPICallsManager sharedManager] addProductToWishlistRequestWithParameters:@{@"productId" : self.productModelReceived.productId} withRequestPath:kAddProductsToWishlistRequestPath cache:NO withCompletionBlock:^(id responseObject,EYError *error)
-     {
-         [weakSelf processAddProductToWishlist:responseObject withError:error withButton:button];
-     }];
+    [productIdsArray addObject:_productModelReceived.productId];
+    [[EYWishlistModel sharedManager]saveWishListProductIdsLocally:productIdsArray];
+    
+        button.isClicked = YES;
+
+    
+    
+    
+//    [EYUtility showHUDWithTitle:@"Adding"];
+//    __weak typeof (self) weakSelf = self;
+//
+//    [[EYAllAPICallsManager sharedManager] addProductToWishlistRequestWithParameters:@{@"productId" : self.productModelReceived.productId} withRequestPath:kAddProductsToWishlistRequestPath cache:NO withCompletionBlock:^(id responseObject,EYError *error)
+//     {
+//         [weakSelf processAddProductToWishlist:responseObject withError:error withButton:button];
+//     }];
     
 }
 
@@ -674,14 +719,41 @@
 
 - (void)deletingFromWishlist:(EYButtonWithRightImage *) button
 {
-    [EYUtility showHUDWithTitle:@"Deleting"];
+    EYGetAllProductsMTLModel *allProducts = [[EYWishlistModel sharedManager] getWishlistLocally];
+    NSMutableArray *productsArray = [allProducts.productsInfo mutableCopy];
     
-    __weak typeof (self) weakSelf = self;
+    if (productsArray.count)
+    {
+        if ([productsArray containsObject:_productModelReceived])
+        {
+            [productsArray removeObject:_productModelReceived];
+        }
+    }
+    
+    allProducts.productsInfo = productsArray;
+    [[EYWishlistModel sharedManager]saveWishListLocally:allProducts];
+    
+    //update product ids array
+    NSMutableArray *productIdsArray= [[[EYWishlistModel sharedManager]getWishlistProductIdsLocally]mutableCopy];
+    if (productIdsArray.count)
+    {
+        if ([productIdsArray containsObject:_productModelReceived.productId])
+        {
+            [productIdsArray removeObject:_productModelReceived.productId];
+        }
+    }
+    [[EYWishlistModel sharedManager]saveWishListProductIdsLocally:productIdsArray];
+    button.isClicked = NO;
 
-    [[EYAllAPICallsManager sharedManager] deleteProductsFromWishlistWithParameters:@{@"productId":self.productModelReceived.productId} withRequestPath:kRemoveSingleProductFromWishlistRequestPath cache:nil withCompletionBlock:^(BOOL responseSuccess, EYError *error)
-     {
-         [weakSelf processDeleteProductsFromWishlist:responseSuccess withError:error andButton:button];
-     }];
+    
+    
+//    [EYUtility showHUDWithTitle:@"Deleting"];
+//    __weak typeof (self) weakSelf = self;
+//
+//    [[EYAllAPICallsManager sharedManager] deleteProductsFromWishlistWithParameters:@{@"productId":self.productModelReceived.productId} withRequestPath:kRemoveSingleProductFromWishlistRequestPath cache:nil withCompletionBlock:^(BOOL responseSuccess, EYError *error)
+//     {
+//         [weakSelf processDeleteProductsFromWishlist:responseSuccess withError:error andButton:button];
+//     }];
 }
 
 - (void)processDeleteProductsFromWishlist:(BOOL)responseSuccess withError:(EYError *)error andButton:(EYButtonWithRightImage *)button
@@ -719,6 +791,7 @@
 //    
 //    [self.navigationController pushViewController:addToBagVC animated:YES];
     
+    [EYUtility showAlertView:@"Product added to cart successfully."];
     EYCartModel *localCartModel = [EYCartModel sharedManager];
     [localCartModel addProductIntoCartLocally:_productModelReceived withSize:_selectedSize];
 }

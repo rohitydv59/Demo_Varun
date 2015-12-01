@@ -179,8 +179,8 @@
 #pragma mark - IBActions -
 - (IBAction)resetPasswordClicked:(id)sender
 {
-    [self.view endEditing:YES];
-    [self resetPassword];
+//    [self.view endEditing:YES];
+//    [self resetPassword];
 }
 
 - (void)resetPassword

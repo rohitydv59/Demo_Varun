@@ -78,7 +78,7 @@
     [self.refreshControl addTarget:self action:@selector(refreshTblView) forControlEvents:UIControlEventValueChanged];
     
     self.tableView.tableHeaderView = [[EDLoaderView alloc] init];
-    [self performSelector:@selector(getBannersData) withObject:nil afterDelay:5.0];
+    [self performSelector:@selector(getBannersData) withObject:nil afterDelay:2.0];
     //[self getBannersData];
 }
 

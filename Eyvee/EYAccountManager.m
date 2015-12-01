@@ -215,47 +215,70 @@
 
 - (void)updateUserProfileWithParams :(NSDictionary *)params andPayload:(NSDictionary *)payload withCompletionBlock:(void(^)(bool success, EYError *error))completionBlock
 {
-    [[EYAllAPICallsManager sharedManager]updateProfileRequestWithParameters:params withRequestPath:kUpdateUserProfile payload:payload withCompletionBlock:^(id responseObject, EYError *error) {
-        if (responseObject && !error)
+//    [[EYAllAPICallsManager sharedManager]updateProfileRequestWithParameters:params withRequestPath:kUpdateUserProfile payload:payload withCompletionBlock:^(id responseObject, EYError *error)
+//    {
+//        if (responseObject && !error)
         {
-            NSDictionary *dict = responseObject[@"data"];
+//            NSDictionary *dict = responseObject[@"data"];
+            NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+            [dict setObject:[payload objectForKey:kUserId] forKey:kUserId];
+            [dict setObject:[payload objectForKey:kFullNameKey] forKey:kFullNameKey];
+            [dict setObject:[payload objectForKey:kEmailIdKey] forKey:kEmailIdKey];
+            [dict setObject:[payload objectForKey:kContactNoKey] forKey:kContactNoKey];
+
+            [dict setObject:@"user123" forKey:kFirstNameKey];
+            [dict setObject:@"+919876543210" forKey:kPhoneNumberKey];
+            [dict setObject:[NSNumber numberWithBool:0] forKey:kIsFbLogin];
+            [dict setObject:@"authorize" forKey:kAuthorizationTokenKey];
+
             [self saveUserDetailsWithData:dict];
             [self updateUserAccountInfo];
             if (completionBlock) {
                 completionBlock(YES, nil);
             }
         }
-        else
-        {
-            if (completionBlock) {
-                completionBlock(NO,error);
-            }
-        }
-    }];
+//        else
+//        {
+//            if (completionBlock) {
+//                completionBlock(NO,error);
+//            }
+//        }
+//    }];
 }
 
 
 - (void) loginUserForParams:(NSDictionary *)params andPayload:(NSDictionary *)payload withCompletionBlock:(void(^)(bool success, EYError *error))completionBlock
 {
-    [[EYAllAPICallsManager sharedManager]signUpRequestWithParameters:nil withRequestPath:kSignInRequestPath payload:payload withCompletionBlock:^(id responseObject, EYError *error) {
-        
+//    [[EYAllAPICallsManager sharedManager]signUpRequestWithParameters:nil withRequestPath:kSignInRequestPath payload:payload withCompletionBlock:^(id responseObject, EYError *error)
+   // {
+    
         [EYUtility hideHUD];
-        if(responseObject && !error)
+//        if(responseObject && !error)
         {
-            NSDictionary *dict = responseObject[@"data"];
+//            NSDictionary *dict = responseObject[@"data"];
+            NSMutableDictionary *dict = [[NSMutableDictionary alloc] init];
+            [dict setObject:[NSNumber numberWithInt:1000] forKey:kUserId];
+            [dict setObject:@"user123" forKey:kFirstNameKey];
+            [dict setObject:@"user123" forKey:kFullNameKey];
+            [dict setObject:@"+919876543210" forKey:kPhoneNumberKey];
+            [dict setObject:@"+919876543210" forKey:kContactNoKey];
+            [dict setObject:[NSNumber numberWithBool:0] forKey:kIsFbLogin];
+            [dict setObject:@"user123@gmail.com" forKey:kEmailIdKey];
+            [dict setObject:@"authorize" forKey:kAuthorizationTokenKey];
+
             [self saveUserDetailsWithData:dict];
             [self updateUserAccountInfo];
             if (completionBlock) {
                 completionBlock(YES, nil);
             }
         }
-        else
-        {
-            if (completionBlock) {
-                completionBlock(NO,error);
-            }
-        }
-    }];
+//        else
+//        {
+//            if (completionBlock) {
+//                completionBlock(NO,error);
+//            }
+//        }
+   // }];
 }
 
 - (void) resetPasswordWithParams:(NSDictionary *)params andPayload:(NSDictionary *)payload withCompletionBlock:(void(^)(NSString *message, EYError *error))completionBlock
