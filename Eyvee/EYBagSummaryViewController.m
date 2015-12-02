@@ -407,7 +407,7 @@
     UIView *view = [[UIView alloc]initWithFrame:CGRectZero];
     return view;
     
-    view.backgroundColor = kSectionBgColor;
+   /* view.backgroundColor = kSectionBgColor;
     
     if (section != _currentModel.cartProducts.count )
     {
@@ -462,6 +462,7 @@
         view.frame = CGRectMake(0, 0, self.view.frame.size.width, 12.0);
         return view;
     }
+    */
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
@@ -494,26 +495,26 @@
 
 - (void)editBagItemWitProductDetails:(EYSyncCartProductDetails *)product
 {
-    EYAddToBagViewController *addToBagVC = [[EYAddToBagViewController alloc]initWithNibName:nil bundle:nil];
-    addToBagVC.comingFromCart = YES;
-    
-    addToBagVC.sizeReceived = product.size;
-    addToBagVC.buttonSizeTagForBottomPopUpView = [product.sizeId integerValue];
-    addToBagVC.productID = product.productId;
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
-    
-    NSDate *startDate = [dateFormatter dateFromString:product.rentalStartDate];
-    NSDate *endDate = [dateFormatter dateFromString:product.rentalEndDate];
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay
-                                                        fromDate:startDate
-                                                          toDate:endDate
-                                                         options:NSCalendarWrapComponents];
-    addToBagVC.rentalPeriod = components.day+1;
-    addToBagVC.cartSKUId = product.cartSkuId;
-    addToBagVC.startDate = startDate;
+//    EYAddToBagViewController *addToBagVC = [[EYAddToBagViewController alloc]initWithNibName:nil bundle:nil];
+//    addToBagVC.comingFromCart = YES;
+//    
+//    addToBagVC.sizeReceived = product.size;
+//    addToBagVC.buttonSizeTagForBottomPopUpView = [product.sizeId integerValue];
+//    addToBagVC.productID = product.productId;
+//    
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+//    
+//    NSDate *startDate = [dateFormatter dateFromString:product.rentalStartDate];
+//    NSDate *endDate = [dateFormatter dateFromString:product.rentalEndDate];
+//    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+//    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay
+//                                                        fromDate:startDate
+//                                                          toDate:endDate
+//                                                         options:NSCalendarWrapComponents];
+//    addToBagVC.rentalPeriod = components.day+1;
+//    addToBagVC.cartSKUId = product.cartSkuId;
+//    addToBagVC.startDate = startDate;
     
     [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
     
