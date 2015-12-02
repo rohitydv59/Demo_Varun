@@ -623,11 +623,18 @@
     }
     if (indexPath.section == 1) {
         
-        EYAllAddressVC * addressVc = [[EYAllAddressVC alloc] initWithNibName:nil bundle:nil];
-        NSLog(@"_cart address in revieworder---- %@",_cartModel.cartAddress);
-        addressVc.currentCart = _cartModel;
-        addressVc.comingFromMode = comingFromReviewMode;
-        [self.navigationController pushViewController:addressVc animated:YES];
+        EYShippingDetailsViewController *shippingVc = [[EYShippingDetailsViewController alloc]initWithNibName:nil bundle:nil];
+        shippingVc.cartModel = _cartModel;
+        shippingVc.addressModel = _cartModel.cartAddress;
+        
+        [self.navigationController pushViewController:shippingVc animated:YES];
+
+        
+//        EYAllAddressVC * addressVc = [[EYAllAddressVC alloc] initWithNibName:nil bundle:nil];
+//        NSLog(@"_cart address in revieworder---- %@",_cartModel.cartAddress);
+//        addressVc.currentCart = _cartModel;
+//        addressVc.comingFromMode = comingFromReviewMode;
+//        [self.navigationController pushViewController:addressVc animated:YES];
     }
     
     if (indexPath.section == 2)
