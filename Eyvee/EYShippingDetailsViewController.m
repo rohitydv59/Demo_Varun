@@ -119,13 +119,14 @@
     }
     NSString * pincode = [[EYUtility shared] getPinCode];
     NSLog(@"pincode - %@",pincode);
-//    if (pincode) {
-//        _addressModel.pincode = pincode;
+    if (pincode) {
+        _addressModel.pincode = pincode;
+    }
 //        [self fetchShippingDetailsWithCompletionBlock:^(bool success, EYError *error) {
 //            [self initializeBottomViewAndTableView];
 //        }];
 //    }
-//    else
+    else
     {
         [self initializeBottomViewAndTableView];
     }
@@ -169,7 +170,6 @@
     
     [self.view addSubview:_tableView];
     
-//    _bottomView = [[EYBottomButton alloc]initWithFrame:(CGRectZero) image:@"next_small" ButtonText:@"SAVE SHIPPING ADDRESS" andFont:AN_BOLD(13.0)];
     _bottomView = [[EYBottomButton alloc]initWithFrame:(CGRectZero) image:@"arrow_next" ButtonText:@"SAVE SHIPPING ADDRESS" andFont:AN_BOLD(13.0)];
 
     [self.view addSubview:_bottomView];
@@ -662,7 +662,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"City" andPlaceholderText:@""];
             
             return cell;
@@ -685,7 +685,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"State" andPlaceholderText:@""];
             
             return cell;
@@ -708,7 +708,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"Country" andPlaceholderText:@""];
             
             return cell;
@@ -729,7 +729,7 @@
             cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
-            cell.textfield.enabled = NO;
+            cell.textfield.enabled = YES;
             [cell setLabelText:@"Country" andPlaceholderText:@""];
             
             return cell;
@@ -783,6 +783,20 @@
         _isSwitchON = NO;
         _addressModel.billingAddress.addressId = [NSNumber numberWithInt:0];
         _addressModel.billingAddress.shippingAddressId = _addressModel.addressId;
+        
+        //for local
+        
+        _addressModel.billingAddress.addressLine1 = nil;
+        _addressModel.billingAddress.addressLine2 = nil;
+        _addressModel.billingAddress.pincode = nil;
+        _addressModel.billingAddress.addressId = [NSNumber numberWithInt:0];
+        _addressModel.billingAddress.shippingAddressId = nil;
+        _addressModel.billingAddress.city = nil;
+        _addressModel.billingAddress.state = nil;
+        _addressModel.billingAddress.country = nil;
+        _addressModel.billingAddress.cityName = nil;
+        _addressModel.billingAddress.stateName = nil;
+        _addressModel.billingAddress.countryName = nil;
 
         [_tableView reloadData];
         [self.view setNeedsLayout];
@@ -888,19 +902,32 @@
     {
         _addressModel.addressLine2 = text;
     }
-    else if ([addressTextField.textFieldName isEqualToString:@"city"])
+    
+    //changing for locally saving the state city and country
+    else if ([addressTextField.textFieldName isEqualToString:@"shippingCity"])
     {
         _addressModel.cityName = text;
     }
+    
+    else if ([addressTextField.textFieldName isEqualToString:@"shippingState"])
+    {
+        _addressModel.stateName = text;
+    }
+    else if ([addressTextField.textFieldName isEqualToString:@"shippingCountry"])
+    {
+        _addressModel.countryName = text;
+    }
+    
     else if ([addressTextField.textFieldName isEqualToString:@"postalCode"])
     {
-        _addressModel.pincode = text;
         if (text.length == 6) {
 //            [textField resignFirstResponder];
 //            [self fetchShippingDetailsWithCompletionBlock:nil];
         }
         else if (text.length > 6)
             return NO;
+        _addressModel.pincode = text;
+
     }
     else if ([addressTextField.textFieldName isEqualToString:@"houseNumberBilling"])
     {
@@ -910,13 +937,29 @@
     {
         _addressModel.billingAddress.addressLine2 = text;
     }
-    else if ([addressTextField.textFieldName isEqualToString:@"cityBilling"])
+    else if ([addressTextField.textFieldName isEqualToString:@"billingCity"])
     {
          _addressModel.billingAddress.cityName = text;
     }
+    //locall
+    else if ([addressTextField.textFieldName isEqualToString:@"billingState"])
+    {
+        _addressModel.billingAddress.stateName = text;
+    }
+    
+    else if ([addressTextField.textFieldName isEqualToString:@"billingState"])
+    {
+        _addressModel.billingAddress.stateName = text;
+    }
+    
     else if ([addressTextField.textFieldName isEqualToString:@"postalCodeBilling"])
     {
-         _addressModel.billingAddress.pincode = text;
+        _addressModel.billingAddress.pincode = text;
+    }
+    
+    else if ([addressTextField.textFieldName isEqualToString:@"billingCountry"])
+    {
+         _addressModel.billingAddress.countryName = text;
         if (text.length == 6) {
             [textField resignFirstResponder];
 //            [self fetchBillingDetails];
@@ -1042,7 +1085,7 @@
 - (void)updateUserAddress
 {
     _addressModel.countryName = @"India";
-    _addressModel.stateName = @"Haryana";
+//    _addressModel.stateName = @"Haryana";
     if (_addressModel.addressLine2.length == 0) {
         _addressModel.addressLine2 = @"";
     }

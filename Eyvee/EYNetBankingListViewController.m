@@ -12,6 +12,7 @@
 #import "EYPayUResponseMtlModel.h"
 #import "TableViewCellWithSeparator.h"
 #import "EYPaymentWebController.h"
+#import "PVToast.h"
 
 @interface EYNetBankingListViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, strong) UITableView *tableView;
@@ -75,8 +76,11 @@ static NSString *cellIdentifier = @"netBankingListCell";
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    EYPayUResponseDetailsMtlModel *model = self.allBanks[indexPath.row];
-    [self openNetbankingController:model];
+    //EYPayUResponseDetailsMtlModel *model = self.allBanks[indexPath.row];
+   // [self openNetbankingController:model];
+    [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
+
+    
     return;
  
 }

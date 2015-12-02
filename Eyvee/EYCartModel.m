@@ -188,6 +188,8 @@
     {
         [localArray addObject:[self addingIntoCart:productModel withSize:size]];
         _cartModel.cartProducts = [localArray mutableCopy];
+        [EYUtility showAlertView:@"Product added to cart successfully."];
+
     }
     else
     {
@@ -206,12 +208,22 @@
         {
             [localArray addObject:[self addingIntoCart:productModel withSize:size]];
             _cartModel.cartProducts = [localArray mutableCopy];
+            [EYUtility showAlertView:@"Product added to cart successfully."];
+
             
+        }
+        else
+        {
+            [EYUtility showAlertView:@"Product already in cart."];
+
         }
     }
     
     _cartModel.totalAmountPayable = [self gettingTotalAmountPayableWithCartModel:_cartModel];
     [self saveCartLocally:_cartModel];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kCartUpdatedNotification object:nil userInfo:@{@"count" : @(_cartModel.cartProducts.count)}];
+
 }
 
 -(EYSyncCartProductDetails *) addingIntoCart:(EYProductsInfo*)productModel withSize:(NSString*)size

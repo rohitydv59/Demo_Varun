@@ -29,6 +29,7 @@
 #import "EYUserInfo.h"
 #import "EYMonthYearPicker.h"
 #import "EDLoaderView.h"
+#import "PVToast.h"
 
 typedef enum {
     PaymentOptionNone = 4,
@@ -541,8 +542,10 @@ static NSString *netBankingCellIdentifier = @"NetbankingCell";
     }
     else if (self.optionSelected == PaymentOptionNetbanking && indexPath.row > 0 && indexPath.row<self.topFiveNetBanks.count+1)
     {
-        EYPayUResponseDetailsMtlModel *model = self.topFiveNetBanks[indexPath.row - 1];
-        [self openNetbankingController:model];
+       // EYPayUResponseDetailsMtlModel *model = self.topFiveNetBanks[indexPath.row - 1];
+       // [self openNetbankingController:model];
+        [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
+
         return;
     }
     else if (self.optionSelected == PaymentOptionNetbanking && indexPath.row == self.topFiveNetBanks.count+1)
@@ -892,7 +895,11 @@ static NSString *netBankingCellIdentifier = @"NetbankingCell";
     EYPaymentWebController *webCont = [[EYPaymentWebController alloc] initWithNibName:nil bundle:nil];
     [webCont setTransactionId:self.data.transactionId];
     [webCont setRequest:request];
-    [self.navigationController pushViewController:webCont animated:YES];
+    
+    [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
+
+    
+   // [self.navigationController pushViewController:webCont animated:YES];
 }
 
 #pragma mark - Picker Delegate

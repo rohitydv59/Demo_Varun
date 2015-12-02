@@ -31,6 +31,7 @@
 #import "EYUserInfo.h"
 #import "EYEmptyView.h"
 #import "EDLoaderView.h"
+#import "PVToast.h"
 
 @interface EYBagSummaryViewController ()<UITableViewDataSource,UITableViewDelegate,EditBagItemDelegate,EYAccountControllerDelegate>
 @property (nonatomic, strong) UITableView * tableView;
@@ -382,7 +383,7 @@
         
         if (section != _currentModel.cartProducts.count)
         {
-            return 43.0;
+            return 1;
         }
         else
             return 11;
@@ -393,6 +394,8 @@
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     UIView *view = [[UIView alloc]initWithFrame:CGRectZero];
+    return view;
+    
     view.backgroundColor = kSectionBgColor;
     
     if (section != _currentModel.cartProducts.count )
@@ -501,6 +504,8 @@
     addToBagVC.cartSKUId = product.cartSkuId;
     addToBagVC.startDate = startDate;
     
+    [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
+    
    // [self.navigationController pushViewController:addToBagVC animated:YES];
 }
 
@@ -528,7 +533,10 @@
 
         NSLog(@"_currentModel.totalAmountPayable %@",_currentModel.totalAmountPayable);
         [[EYCartModel sharedManager] saveCartLocally:_currentModel];
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:kCartUpdatedNotification object:nil userInfo:@{@"count" : @(_currentModel.cartProducts.count)}];
 
+        
         [self.tableView reloadData];
         
         if (_currentModel.cartProducts.count == 0)

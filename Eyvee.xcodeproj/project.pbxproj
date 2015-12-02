@@ -75,6 +75,7 @@
 		964252A01B8703B300551014 /* EYMeAfterLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642529F1B8703B300551014 /* EYMeAfterLoginViewController.m */; };
 		964252A31B870DBE00551014 /* EYMyOrdersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 964252A21B870DBE00551014 /* EYMyOrdersViewController.m */; };
 		964252A61B8714CB00551014 /* EYOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 964252A51B8714CB00551014 /* EYOrderCell.m */; };
+		964B254E1C0ECDC600C7A740 /* PVToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 964B254D1C0ECDC600C7A740 /* PVToast.m */; };
 		9684BF4C1B7C81B6009D87CD /* ProductDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9684BF461B7C81B6009D87CD /* ProductDetailViewController.m */; };
 		9684BF4D1B7C81B6009D87CD /* SaveNShareTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9684BF481B7C81B6009D87CD /* SaveNShareTableViewCell.m */; };
 		9684BF4E1B7C81B6009D87CD /* ShippingNAssuranceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9684BF4A1B7C81B6009D87CD /* ShippingNAssuranceCell.m */; };
@@ -398,6 +399,8 @@
 		964252A21B870DBE00551014 /* EYMyOrdersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYMyOrdersViewController.m; sourceTree = "<group>"; };
 		964252A41B8714CB00551014 /* EYOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EYOrderCell.h; sourceTree = "<group>"; };
 		964252A51B8714CB00551014 /* EYOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EYOrderCell.m; sourceTree = "<group>"; };
+		964B254C1C0ECDC600C7A740 /* PVToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PVToast.h; sourceTree = "<group>"; };
+		964B254D1C0ECDC600C7A740 /* PVToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PVToast.m; sourceTree = "<group>"; };
 		9684BF451B7C81B6009D87CD /* ProductDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewController.h; sourceTree = "<group>"; };
 		9684BF461B7C81B6009D87CD /* ProductDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailViewController.m; sourceTree = "<group>"; };
 		9684BF471B7C81B6009D87CD /* SaveNShareTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaveNShareTableViewCell.h; sourceTree = "<group>"; };
@@ -1306,6 +1309,8 @@
 		B65792FF1B78736100BEED08 /* Eyvee */ = {
 			isa = PBXGroup;
 			children = (
+				964B254C1C0ECDC600C7A740 /* PVToast.h */,
+				964B254D1C0ECDC600C7A740 /* PVToast.m */,
 				73BBBF331BE356FE004BF024 /* Picker */,
 				DFC1A2551BE1120500ED15BB /* On Boarding */,
 				733AC88B1BE0DE2500644E87 /* Calendar */,
@@ -1914,6 +1919,7 @@
 				B6122FA01B8F34F6004CD232 /* PayUItem.m in Sources */,
 				B63A78AC1B96EC1400AD4169 /* EYUserCardDetailsCell.m in Sources */,
 				8BCB6A531BAFE8E700C6EB6A /* FavoriteHeaderView.m in Sources */,
+				964B254E1C0ECDC600C7A740 /* PVToast.m in Sources */,
 				B6122FCC1B8F34F6004CD232 /* PayUCardProcessViewController.m in Sources */,
 				B61CBD471B86F8C700B9D03D /* AFURLConnectionOperation.m in Sources */,
 				B61CBD4A1B86F8C700B9D03D /* AFURLSessionManager.m in Sources */,

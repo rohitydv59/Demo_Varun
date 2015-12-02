@@ -40,8 +40,10 @@
     self.mainSize = [UIScreen mainScreen].bounds.size;
     self.automaticallyAdjustsScrollViewInsets = NO;
     
-    UIImage* logoImage = [UIImage imageNamed:@"logo"];
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+//    UIImage* logoImage = [UIImage imageNamed:@"logo"];
+//    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:logoImage];
+    
+    self.navigationItem.title = @"DEMO";
     
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];

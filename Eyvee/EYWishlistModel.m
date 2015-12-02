@@ -35,7 +35,7 @@
 - (void)setAllProductsInWishlist:(EYGetAllProductsMTLModel *)allProductsInWishlist
 {
     _allProductsInWishlist = allProductsInWishlist;
-    [[NSNotificationCenter defaultCenter]postNotificationName:kWishListUpdateNotification object:nil userInfo:@{@"count":@(self.allProductsInWishlist.productsInfo.count)}];
+//    [[NSNotificationCenter defaultCenter]postNotificationName:kWishListUpdateNotification object:nil userInfo:@{@"count":@(self.allProductsInWishlist.productsInfo.count)}];
 }
 
 -(void)updateProductIdsOfWishlist               // for fav button

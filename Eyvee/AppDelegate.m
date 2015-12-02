@@ -48,24 +48,24 @@
     [[UINavigationBar appearance] setBackIndicatorImage:backButtonImage];
     [[UINavigationBar appearance] setBackIndicatorTransitionMaskImage:backButtonImage];
     
-    [EYFacebookLogin sharedManger];
-    [[FBSDKApplicationDelegate sharedInstance] application:application
-                             didFinishLaunchingWithOptions:launchOptions];
-    
+//    [EYFacebookLogin sharedManger];
+//    [[FBSDKApplicationDelegate sharedInstance] application:application
+//                             didFinishLaunchingWithOptions:launchOptions];
+//    
     [[EYAccountManager sharedManger]updateUserAccountInfo];
-    
-    [EYWebServiceManager sharedManager];
-    
-    [[EYWishlistModel sharedManager] updateWishListModel];
-    [[EYWishlistModel sharedManager] updateProductIdsOfWishlist];
+//
+//    [EYWebServiceManager sharedManager];
+//    
+//    [[EYWishlistModel sharedManager] updateWishListModel];
+//    [[EYWishlistModel sharedManager] updateProductIdsOfWishlist];
     
     // get wishlist 
-    EYWishlistModel *wishlistModel = [EYWishlistModel sharedManager];
-    wishlistModel.wishlistRequestState = wishlistRequestNeedToSend;
-    [wishlistModel  getWishlistItemsWithCompletionBlock:nil];
+//    EYWishlistModel *wishlistModel = [EYWishlistModel sharedManager];
+//    wishlistModel.wishlistRequestState = wishlistRequestNeedToSend;
+//    [wishlistModel  getWishlistItemsWithCompletionBlock:nil];
     
-    EYCartModel * cartManager = [EYCartModel sharedManager];
-    cartManager.cartRequestState = cartRequestNeedToSend;
+//    EYCartModel * cartManager = [EYCartModel sharedManager];
+//    cartManager.cartRequestState = cartRequestNeedToSend;
    
     // Override point for customization after application launch.
     

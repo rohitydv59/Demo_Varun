@@ -38,7 +38,11 @@
     self = [super initWithCustomView:button];
     if (self) {
         self.button = button;
-        NSInteger count = [[EYCartModel sharedManager].cartModel.cartProducts count];
+        //get cart locally to update badge number
+        EYSyncCartMtlModel *cart =[[EYCartModel sharedManager]getCartLocally];
+        NSInteger count = cart.cartProducts.count;
+
+//        NSInteger count = [[EYCartModel sharedManager].cartModel.cartProducts count];
         [self.button setBadgeText:[NSString stringWithFormat:@"%i", (int) count]];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cartUpdated:) name:kCartUpdatedNotification object:nil];
     }

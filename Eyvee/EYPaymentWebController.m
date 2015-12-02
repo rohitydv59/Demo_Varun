@@ -118,7 +118,7 @@
 {
     [self.activityIndicator stopAnimating];
     NSLog(@"did fail with error : %@",error.localizedDescription);
-   // [EYUtility showAlertView:@"EYVEE" message:error.localizedDescription];
+   // [EYUtility showAlertView:@"Demo" message:error.localizedDescription];
 }
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)naavigationType {

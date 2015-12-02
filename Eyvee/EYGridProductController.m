@@ -281,7 +281,7 @@ static NSString * const reuseIdentifier = @"Cell";
         __weak typeof (self)weakSelf = self;
 
         NSString *pageStr = [NSString stringWithFormat:@"%ld",(long)pageCount];
-        NSString *requestPath = kGetAllProductsRequestPath(pageStr);
+     //   NSString *requestPath = kGetAllProductsRequestPath(pageStr);
 
         [[EYAllAPICallsManager sharedManager] getAllProductsWithCustomFilters:nil requestPath:_filePathForData shouldCache:NO payload:arrayOfAppliedFilters withCompletionBlock:^(id responseObject, EYError *error)
          {
@@ -721,6 +721,8 @@ static NSString * const reuseIdentifier = @"Cell";
         [EYWishlistModel sharedManager].productIdsArray = tempArr;
     }
     [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:tempArr];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kWishListUpdateNotification object:nil userInfo:@{@"count":@([[EYWishlistModel sharedManager]getWishlistLocally].productsInfo.count)}];
+
     
     [_collectionView reloadData];
 }
@@ -782,6 +784,8 @@ static NSString * const reuseIdentifier = @"Cell";
                 [[EYWishlistModel sharedManager] saveWishListProductIdsLocally:array];
             }
         }
+        [[NSNotificationCenter defaultCenter]postNotificationName:kWishListUpdateNotification object:nil userInfo:@{@"count":@([[EYWishlistModel sharedManager]getWishlistProductIdsLocally].count)}];
+
         [self.collectionView reloadData];
     }
 }

@@ -19,7 +19,7 @@
 "no_internet_conn" = "Yikes! looks like you have no network, check your network setting and try again";
 
 "download_failed" = "honestly I don’t know why this happened. If I were you, I’d recheck my connection settings and try again";
-"incorrect_mob_no" = "eyvee is unable to verify your mobile number, would you like to try again";
+"incorrect_mob_no" = "Demo is unable to verify your mobile number, would you like to try again";
 "incorrect_pin" = "hmmm, we are unable to recognise your PIN, did you input the right one? #justsaying";
 "area_outside_delivery" = "so… this is awkward, we currenty don’t support your location but if you give us your email id, we’ll let you know the moment we are live"; // add link to mail
 "login_err" = "hmmm…we are not the pearly gates of heaven, you should be able to get in easily, want to give it another shot?";
@@ -70,7 +70,7 @@
 
 //on boarding constants
 "get_started_btn" = "GET STARTED";
-"onboard_main_lbl" = "eyvee";
+"onboard_main_lbl" = "DEMO";
 "rent_btn" = "RENT";
 "wear_btn" = "WEAR";
 "return_btn" = "RETURN";

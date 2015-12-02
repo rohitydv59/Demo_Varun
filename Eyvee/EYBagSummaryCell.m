@@ -220,10 +220,10 @@
 
 - (void)editProduct
 {
-//    if (_delegate && [_delegate respondsToSelector:@selector(editBagItemWitProductDetails:)])
-//    {
-//        [_delegate editBagItemWitProductDetails:_currentProduct];
-//    }
+    if (_delegate && [_delegate respondsToSelector:@selector(editBagItemWitProductDetails:)])
+    {
+        [_delegate editBagItemWitProductDetails:_currentProduct];
+    }
 }
 
 - (void)removeProduct

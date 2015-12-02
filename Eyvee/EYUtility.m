@@ -180,7 +180,7 @@ NSString *const kRentalPeriodChangeNotification = @"kRentalPeriodChangeNotificat
 
 + (void) showAlertView:(NSString *) message
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Eyvee"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Demo"
                                                     message:message
                                                    delegate:self
                                           cancelButtonTitle:@"OK"

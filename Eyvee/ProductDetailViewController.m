@@ -619,7 +619,7 @@
     EYButtonWithRightImage * button = (EYButtonWithRightImage *) sender;
     if ([[EYAccountManager sharedManger] isUserLoggedIn] == NO)
     {
-        [[[UIAlertView alloc] initWithTitle:@"Eyvee" message:@"Please Login to add this product in your Wishlist" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil] show];
+        [[[UIAlertView alloc] initWithTitle:@"DEMO" message:@"Please Login to add this product in your Wishlist" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Login", nil] show];
     }
     else
     {
@@ -674,7 +674,7 @@
     allProducts.productsInfo = arrayForAddingProduct;
     
     [[EYWishlistModel sharedManager]saveWishListLocally:allProducts];
-    
+
     //For updating product ids array
     NSMutableArray *productIdsArray = [[[EYWishlistModel sharedManager]getWishlistProductIdsLocally] mutableCopy];
     
@@ -691,7 +691,8 @@
     
         button.isClicked = YES;
 
-    
+    [[NSNotificationCenter defaultCenter]postNotificationName:kWishListUpdateNotification object:nil userInfo:@{@"count":@([[EYWishlistModel sharedManager]getWishlistLocally].productsInfo.count)}];
+
     
     
 //    [EYUtility showHUDWithTitle:@"Adding"];
@@ -743,6 +744,8 @@
         }
     }
     [[EYWishlistModel sharedManager]saveWishListProductIdsLocally:productIdsArray];
+    [[NSNotificationCenter defaultCenter]postNotificationName:kWishListUpdateNotification object:nil userInfo:@{@"count":@([[EYWishlistModel sharedManager]getWishlistProductIdsLocally].count)}];
+
     button.isClicked = NO;
 
     
@@ -791,9 +794,9 @@
 //    
 //    [self.navigationController pushViewController:addToBagVC animated:YES];
     
-    [EYUtility showAlertView:@"Product added to cart successfully."];
     EYCartModel *localCartModel = [EYCartModel sharedManager];
     [localCartModel addProductIntoCartLocally:_productModelReceived withSize:_selectedSize];
+
 }
 
 

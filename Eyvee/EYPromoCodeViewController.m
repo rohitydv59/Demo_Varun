@@ -16,6 +16,8 @@
 #import "EYUserInfo.h"
 #import "EYAccountManager.h"
 
+#import "PVToast.h"
+
 @interface EYPromoCodeViewController ()<UITextFieldDelegate,UITableViewDataSource,UITableViewDelegate>
 @property (strong,nonatomic) UITextField *promoCodeField;
 @property (strong,nonatomic) EYBottomButton *bottomView;
@@ -134,42 +136,44 @@
 
 -(void)applyCode:(id)sender
 {
-    if (self.promoCodeEntered.length>0)
-    {
-        //update Cart Api
-         NSString *userIdStr = [NSString stringWithFormat:@"%@",[EYAccountManager sharedManger].loggedInUser.userId];
-        NSString * userId = userIdStr ? userIdStr : @"-1";
-        NSString * cartId = [[EYUtility shared] getCartId]?[[EYUtility shared] getCartId]:@"-1";
-        
-         NSDictionary * payload = @{@"userId":userId,@"cartId":cartId};
-        [EYUtility showHUDWithTitle:@"Please wait"];
-        NSDictionary *params = @{@"eventId" : @(1),@"promoCode" : self.promoCodeEntered};
-        [[EYAllAPICallsManager sharedManager] syncCartRequestWithParameters:params withRequestPath:kSyncCartRequestPath cache:NO payload:payload withCompletionBlock:^(id responseObject, EYError *error)
-         {
-             [EYUtility hideHUD];
-            if (error)
-            {
-                [EYUtility showAlertView:error.errorMessage];
-            }
-            else
-            {
-                _cartModelReceived = (EYSyncCartMtlModel *)responseObject;
-                if ([_delegate respondsToSelector:@selector(promoCodeAppliedAndFinalCartObject:)])
-                {
-                    [_delegate promoCodeAppliedAndFinalCartObject:_cartModelReceived];
-            }
-                [self.view endEditing:YES];
-                [self.navigationController popViewControllerAnimated:YES];
-              
-            }
-        }];
+    [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
 
-        
-    }
-    else
-    {
-        [[[UIAlertView alloc] initWithTitle:@"Please Enter some code" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
-    }
+//    if (self.promoCodeEntered.length>0)
+//    {
+//        //update Cart Api
+//         NSString *userIdStr = [NSString stringWithFormat:@"%@",[EYAccountManager sharedManger].loggedInUser.userId];
+//        NSString * userId = userIdStr ? userIdStr : @"-1";
+//        NSString * cartId = [[EYUtility shared] getCartId]?[[EYUtility shared] getCartId]:@"-1";
+//        
+//         NSDictionary * payload = @{@"userId":userId,@"cartId":cartId};
+//        [EYUtility showHUDWithTitle:@"Please wait"];
+//        NSDictionary *params = @{@"eventId" : @(1),@"promoCode" : self.promoCodeEntered};
+//        [[EYAllAPICallsManager sharedManager] syncCartRequestWithParameters:params withRequestPath:kSyncCartRequestPath cache:NO payload:payload withCompletionBlock:^(id responseObject, EYError *error)
+//         {
+//             [EYUtility hideHUD];
+//            if (error)
+//            {
+//                [EYUtility showAlertView:error.errorMessage];
+//            }
+//            else
+//            {
+//                _cartModelReceived = (EYSyncCartMtlModel *)responseObject;
+//                if ([_delegate respondsToSelector:@selector(promoCodeAppliedAndFinalCartObject:)])
+//                {
+//                    [_delegate promoCodeAppliedAndFinalCartObject:_cartModelReceived];
+//            }
+//                [self.view endEditing:YES];
+//                [self.navigationController popViewControllerAnimated:YES];
+//              
+//            }
+//        }];
+//
+//        
+//    }
+//    else
+//    {
+//        [[[UIAlertView alloc] initWithTitle:@"Please Enter some code" message:nil delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+//    }
 }
 
 #pragma mark Text Field Delegates

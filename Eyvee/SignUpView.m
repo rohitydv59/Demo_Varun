@@ -25,6 +25,7 @@
 #import "EYUserDetailsVC.h"
 #import "AppDelegate.h"
 #import "EYOnBoardingViewController.h"
+#import "PVToast.h"
 
 @interface SignUpView()<EYAccountControllerDelegate, UIActivityItemSource,EYOnBoardingViewControllerDelegate>
 
@@ -280,7 +281,8 @@
 //                EYMyOrdersViewController *orderVC = [[EYMyOrdersViewController alloc]initWithNibName:nil bundle:nil];
 //                [[NSNotificationCenter defaultCenter] postNotificationName:kTabbarHideNotification object:nil];
 //                [self.navigationController pushViewController:orderVC animated:YES];
-                
+                [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
+
             }
             else if (indexPath.row == 1)
             {
@@ -288,6 +290,8 @@
 //                allAddress.comingFromMode = comingFromMeMode;
 //                [[NSNotificationCenter defaultCenter] postNotificationName:kTabbarHideNotification object:nil];
 //                [self.navigationController pushViewController:allAddress animated:YES];
+                [[PVToast shared]showToastMessage:@"Disabled For Demo Version"];
+
                 
             }
             else if (indexPath.row == 2)

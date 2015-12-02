@@ -476,7 +476,7 @@
                             NSParagraphStyleAttributeName : style4
                             };
     
-    NSAttributedString *strRight = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n",[[EYUtility shared]getCurrencyFormatFromNumber:[_cartModel.totalAmountPayableTaxExcl floatValue] ]] attributes:dict3];
+    NSAttributedString *strRight = [[NSAttributedString alloc] initWithString:[NSString stringWithFormat:@"%@\n",[[EYUtility shared]getCurrencyFormatFromNumber:[_cartModel.totalAmountPayable floatValue] ]] attributes:dict3];
     [attrRight appendAttributedString:strRight];
     
     strRight = [[NSAttributedString alloc]initWithString:@"Free\n" attributes:dict4];
@@ -503,22 +503,31 @@
 #pragma mark - -
 -(void)proceedToPaymentTapped:(id)sender
 {
-    //_cartModel.cartAddress.addressId = nil;
-    if (!_cartModel.cartAddress.addressId || !_cartModel.cartAddress.billingAddress.addressId) {
-        [EYUtility showAlertView:@"Some mismatch happened between your shipping and billing address.Please select any other address"];
-        return;
-    }
     
-    [self updateAddressInCartWithCompletionBlock:^(bool success, EYError *error) {
-        if (!error) {
-            
-            [self validateCartWithCompletionBlock:^(bool success, EYError *error) {
-                if (!error) {
-                    
-                    EYPaymentOptionsController *payment = [[EYPaymentOptionsController alloc] initWithStyle:UITableViewStyleGrouped];
-                    payment.cartModel = _cartModel;
-                    [self.navigationController pushViewController:payment animated:YES];
+    //locally
+    
+    EYPaymentOptionsController *payment = [[EYPaymentOptionsController alloc] initWithStyle:UITableViewStyleGrouped];
+    payment.cartModel = _cartModel;
+    [self.navigationController pushViewController:payment animated:YES];
 
+    
+    
+    //_cartModel.cartAddress.addressId = nil;
+//    if (!_cartModel.cartAddress.addressId || !_cartModel.cartAddress.billingAddress.addressId) {
+//        [EYUtility showAlertView:@"Some mismatch happened between your shipping and billing address.Please select any other address"];
+//        return;
+//    }
+    
+//    [self updateAddressInCartWithCompletionBlock:^(bool success, EYError *error) {
+//        if (!error) {
+//            
+//            [self validateCartWithCompletionBlock:^(bool success, EYError *error) {
+//                if (!error) {
+//                    
+//                    EYPaymentOptionsController *payment = [[EYPaymentOptionsController alloc] initWithStyle:UITableViewStyleGrouped];
+//                    payment.cartModel = _cartModel;
+//                    [self.navigationController pushViewController:payment animated:YES];
+//
 //                    NSString *userIdStr = [NSString stringWithFormat:@"%@",[EYAccountManager sharedManger].loggedInUser.userId];
 //                    NSDictionary * payload = @{
 //                                               @"userId": userIdStr,
@@ -539,17 +548,17 @@
 
                     
                     
-                }
-                else
-                    [EYUtility showAlertView:error.errorMessage];
-     
-            }];
-        }
-        else
-            [EYUtility showAlertView:error.errorMessage];
-        
-    }];
-
+//                }
+//                else
+//                    [EYUtility showAlertView:error.errorMessage];
+//     
+//            }];
+//        }
+//        else
+//            [EYUtility showAlertView:error.errorMessage];
+//        
+//    }];
+//
 }
 
 - (void)updateAddressInCartWithCompletionBlock:(void(^)(bool success, EYError *error))completionBlock;
