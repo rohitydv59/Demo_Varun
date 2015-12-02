@@ -247,7 +247,7 @@
                             };
     
     
-    NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"Copyright 2015 Eyvee." attributes:dict1];
+    NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"Copyright 2015 Demo." attributes:dict1];
     [attr appendAttributedString:str];
     str = [[NSAttributedString alloc] initWithString:@"Terms " attributes:dict2];
     [attr appendAttributedString:str];

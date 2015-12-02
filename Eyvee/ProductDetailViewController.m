@@ -793,6 +793,11 @@
 //    addToBagVC.delegate = self;
 //    
 //    [self.navigationController pushViewController:addToBagVC animated:YES];
+    if (!_selectedSize || [_selectedSize isEqualToString:@""] || [_selectedSize isEqualToString:@"Free Size"])
+    {
+        [EYUtility showAlertView:@"Please select size."];
+        return;
+    }
     
     EYCartModel *localCartModel = [EYCartModel sharedManager];
     [localCartModel addProductIntoCartLocally:_productModelReceived withSize:_selectedSize];

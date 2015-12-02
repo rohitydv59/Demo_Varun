@@ -88,7 +88,7 @@
     str = [[NSAttributedString alloc]initWithString:@"For any help we are always available at " attributes:dict1];
     [attr appendAttributedString:str];
     
-    str = [[NSAttributedString alloc]initWithString:@"support@eyvee.com" attributes:dict2];
+    str = [[NSAttributedString alloc]initWithString:@"support@demo.com" attributes:dict2];
     [attr appendAttributedString:str];
     
     return attr;
