@@ -226,20 +226,22 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)getDataWithSortIndex:(NSInteger)index
 {
+   
     _productsInfoArray = nil;
     [self.collectionView reloadData];
-    
     self.loader.hidden = NO;
-
     [self.headerView setUserInteractionEnabled:NO];
+    
     if (_productCategory == GetProductsFromSlider || _productCategory == GetProductsFromBanner)
     {
         NSDictionary *filters = @{};
         NSMutableArray * arrayOfAppliedFilters = [self creatingDictForFilters:self.appliedFilterModel];
-        if (_sliderNameReceived && _sliderValueReceived && _subcategoryIdReceived) {
+        if (_sliderNameReceived && _sliderValueReceived && _subcategoryIdReceived)
+        {
             
             NSString *sliderTypeStr = @"Category";
-            switch ([_sliderType integerValue]) {
+            switch ([_sliderType integerValue])
+            {
                 case 1:
                     sliderTypeStr = @"Recently Viewed";
                     break;
@@ -270,28 +272,83 @@ static NSString * const reuseIdentifier = @"Cell";
 
             [arrayOfAppliedFilters addObject:dict];
             filters = @{@"sortingType": @(index)};
-        }
+            
+            //For Sorting locally
+            
+            
+        }//SLideer
+        
+        
         else if (_bannerIdReceived) {
             filters = @{@"bannerId" : _bannerIdReceived,
                         @"sortingType": @(index)};
+            
+
         }
         else {
             
         }
-        __weak typeof (self)weakSelf = self;
 
-        NSString *pageStr = [NSString stringWithFormat:@"%ld",(long)pageCount];
+//        NSString *pageStr = [NSString stringWithFormat:@"%ld",(long)pageCount];
      //   NSString *requestPath = kGetAllProductsRequestPath(pageStr);
 
-        [[EYAllAPICallsManager sharedManager] getAllProductsWithCustomFilters:nil requestPath:_filePathForData shouldCache:NO payload:arrayOfAppliedFilters withCompletionBlock:^(id responseObject, EYError *error)
-         {
-             [weakSelf processAllProductsWithCustomFilterResponse:responseObject withError:error withArrayOfAppliedFilters:arrayOfAppliedFilters];
-         }];
+        [self performSelector:@selector(apiCallForProducts:) withObject:[NSNumber numberWithInteger:index] afterDelay:2];
+        
     }
     else if(_productCategory == GETProductsFromWishlist)                                                             //wishlist
     {
         
     }
+}
+
+-(void) apiCallForProducts:(NSNumber*)indexNum
+{
+    __weak typeof (self)weakSelf = self;
+
+    [[EYAllAPICallsManager sharedManager] getAllProductsWithCustomFilters:nil requestPath:_filePathForData shouldCache:NO payload:nil withCompletionBlock:^(id responseObject, EYError *error)
+     {
+         [weakSelf processAllProductsWithCustomFilterResponse:responseObject withError:error withArrayOfAppliedFilters:nil withIndex:indexNum.integerValue];
+     }];
+
+}
+
+-(void)sortingLocally:(NSNumber *)index
+{
+    self.loader.hidden = YES;
+    NSSortDescriptor* sortDescriptor;
+    if (index.integerValue == 1)
+    {
+        sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:YES selector:@selector(compare:)];
+    }
+    else if (index.integerValue == 2)
+    {
+        sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:nil ascending:NO selector:@selector(compare:)];
+    }
+    
+    NSMutableArray *productPricesArray = [[NSMutableArray alloc]init];
+    
+    for (EYProductsInfo *productInfo in _productsInfoArray)
+    {
+        [productPricesArray addObject:productInfo.originalPrice];
+    }
+    
+    NSArray *sortedNumbers = [productPricesArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    
+    NSMutableArray *arrayOfProductsAfterSort = [[NSMutableArray alloc]init];
+    for (int i = 0; i < sortedNumbers.count; i++)
+    {
+        for (EYProductsInfo *product in _productsInfoArray)
+        {
+            if (sortedNumbers[i] == product.originalPrice)
+            {
+                [arrayOfProductsAfterSort addObject:product];
+            }
+        }
+    }
+    
+    _productsInfoArray = arrayOfProductsAfterSort;
+    
+    [self.collectionView reloadData];
 }
 
 - (void)setup
@@ -731,8 +788,8 @@ static NSString * const reuseIdentifier = @"Cell";
 {
     if (_productCategory == GETProductsFromWishlist)
     {
-        [EYUtility showHUDWithTitle:@"Deleting"];
-        [self performSelector:@selector(deletionAfterDelay:) withObject:product afterDelay:.65];
+//        [EYUtility showHUDWithTitle:@"Deleting"];
+        [self performSelector:@selector(deletionAfterDelay:) withObject:product afterDelay:0];
     }
     else
     {
@@ -1209,7 +1266,7 @@ static NSString * const reuseIdentifier = @"Cell";
     }
 }
 
-- (void)processAllProductsWithCustomFilterResponse : (id)responseObject withError:(EYError *)error withArrayOfAppliedFilters:(NSMutableArray *)arrayOfAppliedFilters
+- (void)processAllProductsWithCustomFilterResponse : (id)responseObject withError:(EYError *)error withArrayOfAppliedFilters:(NSMutableArray *)arrayOfAppliedFilters withIndex:(NSInteger) index
 {
     self.loader.hidden = YES;
     if (!error)
@@ -1270,6 +1327,12 @@ static NSString * const reuseIdentifier = @"Cell";
             }
             
         }
+        
+        if (index != 0)
+        {
+            [self performSelector:@selector(sortingLocally:) withObject:[NSNumber numberWithInteger:index] afterDelay:0];
+        }
+
     }
     else {
 #warning errormessage to be changed

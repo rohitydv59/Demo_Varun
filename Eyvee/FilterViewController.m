@@ -74,7 +74,7 @@
 
     for (EYProductFilters * productFilter in self.allProductsWithFilterModel.productsFilters)
     {
-        if ([productFilter.name isEqualToString:NSLocalizedString(@"fourdayrentalprice", @"")] || [productFilter.name isEqualToString:NSLocalizedString(@"eightdayrentalprice", @"")] || [productFilter.name isEqualToString:NSLocalizedString(@"Color", @"")])
+        if ([productFilter.name isEqualToString:NSLocalizedString(@"Color", @"")])
         {
             [self.localFiltersProductModelArray addObject:productFilter];
         }
