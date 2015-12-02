@@ -181,7 +181,7 @@
     NSAttributedString *str = [[NSAttributedString alloc] initWithString:@"We have sent rest of the details to your registered email. Before delivery we will reach you to update about order status. For any help we are always available on " attributes:dict1];
     [attr appendAttributedString:str];
     
-    str = [[NSAttributedString alloc] initWithString:@"support@eyvee.com" attributes:dict2];
+    str = [[NSAttributedString alloc] initWithString:@"support@demo.com" attributes:dict2];
     [attr appendAttributedString:str];
     
     str = [[NSAttributedString alloc] initWithString:@"or 9988882222" attributes:dict1];

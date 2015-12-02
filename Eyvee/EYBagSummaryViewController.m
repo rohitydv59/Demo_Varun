@@ -74,6 +74,17 @@
         _currentModel = cartSaved;
         _bottomView.hidden = NO;
 
+        if(_currentModel.cartProducts.count <= 0)
+        {
+            //no products in cart
+            EYEmptyView *emptyView = [[EYUtility shared]errorViewWithText:NSLocalizedString(@"empty_cart", @"") withImage:[UIImage imageNamed:@"cart_empty_large"] andRetryBtnHidden:YES];
+            [self.tableView setTableHeaderView:emptyView];
+            [self.tableView setTableFooterView:nil];
+            [self.tableView reloadData];
+            _bottomView.hidden = YES;
+        }
+
+
     }
     else
     {
