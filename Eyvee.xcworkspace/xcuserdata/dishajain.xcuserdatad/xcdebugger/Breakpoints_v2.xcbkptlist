@@ -202,11 +202,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Eyvee/EYBagSummaryViewController.m"
-            timestampString = "470733365.561755"
+            timestampString = "470752810.76927"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "653"
-            endingLineNumber = "653"
+            startingLineNumber = "654"
+            endingLineNumber = "654"
             landmarkName = "-fetchUserAddressesAndPushRequiredController"
             landmarkType = "5">
          </BreakpointContent>

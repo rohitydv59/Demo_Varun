@@ -460,7 +460,7 @@
             NSString *str = [NSString stringWithFormat:@"%ld%ld",(long)indexPath.section+1,(long)indexPath.row];
             cell.textfield.tag = [str integerValue];
             cell.textfield.text = _addressModel.cityName;
-            cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
+            cell.textfield.keyboardType = UIKeyboardTypeDefault;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
             cell.textfield.enabled = YES;
@@ -482,7 +482,7 @@
             NSString *str = [NSString stringWithFormat:@"%ld%ld",(long)indexPath.section+1,(long)indexPath.row];
             cell.textfield.tag = [str integerValue];
             cell.textfield.text = _addressModel.stateName;
-            cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
+            cell.textfield.keyboardType = UIKeyboardTypeDefault;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
             cell.textfield.enabled = YES;
@@ -504,7 +504,7 @@
             NSString *str = [NSString stringWithFormat:@"%ld%ld",(long)indexPath.section+1,(long)indexPath.row];
             cell.textfield.tag = [str integerValue];
             cell.textfield.text = _addressModel.countryName;
-            cell.textfield.keyboardType = UIKeyboardTypeNumberPad;
+            cell.textfield.keyboardType = UIKeyboardTypeDefault;
             cell.textfield.inputAccessoryView = self.accView;
             cell.textfield.delegate = self;
             cell.textfield.enabled = YES;

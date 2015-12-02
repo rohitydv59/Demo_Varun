@@ -396,7 +396,7 @@
     UIView *view = [[UIView alloc]initWithFrame:CGRectZero];
     return view;
     
-    view.backgroundColor = kSectionBgColor;
+   /* view.backgroundColor = kSectionBgColor;
     
     if (section != _currentModel.cartProducts.count )
     {
@@ -451,6 +451,7 @@
         view.frame = CGRectMake(0, 0, self.view.frame.size.width, 12.0);
         return view;
     }
+    */
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
