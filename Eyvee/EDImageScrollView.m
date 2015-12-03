@@ -75,21 +75,23 @@
 
 - (void)setInternalImageAtURL:(NSString *)imageURL
 {
-    if (!imageURL) {
-        return;
-    }
-    
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]];
-    
-    __weak typeof (self) weakself = self;
-    [self.imageView setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
-     {
-         [weakself processImageResponse:image];
-         
-     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
-         [weakself processImageResponse:nil];
-         
-     }];
+//    if (!imageURL) {
+//        return;
+//    }
+//    
+//    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageURL]];
+//    
+//    __weak typeof (self) weakself = self;
+//    [self.imageView setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
+//     {
+//         [weakself processImageResponse:image];
+//         
+//     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error) {
+//         [weakself processImageResponse:nil];
+//         
+//     }];
+    NSLog(@"imageURL ddisss %@",imageURL);
+    [self.imageView setImage:[UIImage imageNamed:imageURL]];
 }
 
 - (void)setImageURL:(NSString *)imageURL

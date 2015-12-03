@@ -20,7 +20,7 @@
                                "imageSize": "small"
                                },
                                {
-                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/occasions/occasion_1447155828179-medium.jpg",
+                               "image": "occasions.jpg",
                                "imageSize": "medium"
                                },
                                {
@@ -62,7 +62,7 @@
                                "imageSize": "small"
                                },
                                {
-                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-1/category_1_1447155818061-medium.jpg",
+                               "image": "clothing.jpg",
                                "imageSize": "medium"
                                },
                                {
@@ -101,7 +101,7 @@
                                "imageSize": "small"
                                },
                                {
-                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/categories/categories-2/category_2_1447155846605-medium.jpg",
+                               "image": "accessories.jpg",
                                "imageSize": "medium"
                                },
                                {
@@ -134,7 +134,7 @@
                                "imageSize": "small"
                                },
                                {
-                               "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/brands/brand_1447155873658-medium.jpg",
+                               "image": "designers.jpg",
                                "imageSize": "medium"
                                },
                                {

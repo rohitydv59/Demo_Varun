@@ -144,24 +144,27 @@
 
 - (void)setProductImage:(NSString *)imageStr
 {
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageStr]];
-    UIImage *img = [[UIImageView sharedImageCache] cachedImageForRequest:request];
-    if (img)
-    {
-        [self cancelImageRequest];
-        self.productImgView.image = img;
-        return;
-    }
+    self.productImgView.image = [UIImage imageNamed:imageStr];
+    return;
 
-    __weak __typeof(self)weakSelf = self;
-    
-    [self.productImgView setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
-     {
-         [weakSelf processImage:image];
-     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error)
-     {
-         [weakSelf processImage:nil];
-     }];
+//    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:imageStr]];
+//    UIImage *img = [[UIImageView sharedImageCache] cachedImageForRequest:request];
+//    if (img)
+//    {
+//        [self cancelImageRequest];
+//        self.productImgView.image = [UIImage imageNamed: imageStr];
+//        return;
+//    }
+//
+//    __weak __typeof(self)weakSelf = self;
+//    
+//    [self.productImgView setImageWithURLRequest:request placeholderImage:nil success:^(NSURLRequest *request, NSHTTPURLResponse *response, UIImage *image)
+//     {
+//         [weakSelf processImage:image];
+//     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error)
+//     {
+//         [weakSelf processImage:nil];
+//     }];
 }
 
 - (void)processImage:(UIImage*)image

@@ -24,7 +24,7 @@ typedef enum {
 
 - (void)setLabelText:(NSString *)mainText headerText:(NSString *)headerText middleText:(NSString*)midText bottomText:(NSString*)btomText WithVCMode:(EYVCType)mode;
 
-- (void)setImgViewImageWithUrl:(NSURLRequest*)urlRequest;
+- (void)setImgViewImageWithUrl:(NSString*)urlRequest;
 - (void)setHeaderTextFont:(NSInteger)headerFont middleTextFont:(NSInteger)middleTextFont bottomTextFont:(NSInteger)bottomTextFont;
 
 - (void)resetImage;

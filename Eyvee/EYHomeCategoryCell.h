@@ -13,7 +13,7 @@
 
 - (void)setlabelmainText:(NSString *)mainText headerText:(NSString*)headerText middleText:(NSString*)middleText bottomText:(NSString*)bottomText WithVCMode:(EYVCType)mode;
 - (void)setcategoryImage:(UIImage *)image;
-- (void)setBannerImage:(NSURL *)imageURl;
+- (void)setBannerImage:(NSString*)imageURl;
 - (void)setHeaderTextFont:(NSInteger)headerFont middleTextFont:(NSInteger)middleTextFont bottomTextFont:(NSInteger)bottomTextFont;
 
 @end

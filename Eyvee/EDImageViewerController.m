@@ -118,6 +118,8 @@
     EDImageInnerController *controller = [[EDImageInnerController alloc] initWithNibName:nil bundle:nil];
     controller.imageStr = [self gettingImageUrlString:self.imageArray withIndex:index];
     controller.largeImageStr = [self gettingImageUrlString:self.largeImageArray withIndex:index];
+    NSLog(@"imageStr isss rr %@",controller.imageStr);
+    NSLog(@"largeImageStr isss rr %@",controller.largeImageStr);
     controller.delegate = self;
     controller.view.tag = index;
 
@@ -229,8 +231,9 @@
             img_URL = [self gettingImageUrlString:self.imageArray withIndex:self.selectedIndex];
             
             UIImageView *  imgView = [[UIImageView alloc] init];
-            [imgView setImageWithURL:[NSURL URLWithString:img_URL]];
-            
+//            [imgView setImageWithURL:[NSURL URLWithString:img_URL]];
+            [imgView setImage:[UIImage imageNamed:img_URL]];
+
             CGRect newFrame = [self settingFrame:imgView.image];
             CGRect headerRectFrame = fromViewController.header.view.frame;
             
@@ -291,8 +294,8 @@
                         img_URL = [self gettingImageUrlString:toViewController.header.innerController.imageArray withIndex:self.selectedIndex];
                         
                         UIImageView *imageView = [[UIImageView alloc]init];
-                        [imageView setImageWithURL:[NSURL URLWithString:img_URL]];
-                        
+//                        [imageView setImageWithURL:[NSURL URLWithString:img_URL]];
+                        [imageView setImage:[UIImage imageNamed:img_URL]];
                         toViewController.header.isIndexChanged = YES;
                         toViewController.header.currentPageIndex = fromViewController.selectedIndex;
                         [toViewController.header.pageViewController setViewControllers:@[[toViewController.header viewControllerAtIndex:fromViewController.selectedIndex]] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
@@ -353,6 +356,7 @@
     {
         imgSize = CGSizeMake(360 , 540);
     }
+//    return <#expression#>
     UIImageView *imgView = [[UIImageView alloc] init];
     CGSize boundsSize = self.view.bounds.size;
 
@@ -409,6 +413,19 @@
         contentsFrame.origin.y = 0.0f;
     }
     imgView.frame = contentsFrame;
+    
+//    if ([EYUtility isDeviceGreaterThanSix])                          // for 6+
+//    {
+//        imgSize = CGSizeMake(480 , 720);
+//        imgView.frame  = CGRectMake(contentsFrame.origin.x, contentsFrame.origin.y, 480, 720);
+//        
+//    }
+//    else
+//    {
+//        imgSize = CGSizeMake(360 , 540);
+//        imgView.frame  = CGRectMake(contentsFrame.origin.x, contentsFrame.origin.y, 360, 540);
+//    }
+
 //    NSLog(@"imgView.frame is %@", NSStringFromCGRect(imgView.frame));
     return imgView.frame;
 }

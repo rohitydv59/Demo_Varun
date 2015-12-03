@@ -114,9 +114,10 @@
     
     for (EYProductResizeImages * productResizeImage in cartProduct.productResizeImages)
     {
-        if ([productResizeImage.imageSize isEqual:@"thumbnail"] && [productResizeImage.imageTag isEqual:@"front"])
+        if ([productResizeImage.imageSize isEqual:@"large"] && [productResizeImage.imageTag isEqual:@"front"])
         {
-            [_itemImage setImageWithURL:[NSURL URLWithString:productResizeImage.image] placeholderImage:nil];
+            [_itemImage setImage:[UIImage imageNamed:productResizeImage.image]];
+         //   [_itemImage setImageWithURL:[NSURL URLWithString:productResizeImage.image] placeholderImage:nil];
         }
     }
     if (cartProduct.size == nil || [cartProduct.size isEqualToString:@"free size"])

@@ -50,14 +50,14 @@
 //    [self.categoryView setImgViewImage:image];
 }
 
-- (void)setBannerImage:(NSURL *)imageURl
+- (void)setBannerImage:(NSString *)imageURl
 {
     if (!imageURl) {
         [self.categoryView resetImage];
         return;
     }
-    NSURLRequest *request = [NSURLRequest requestWithURL:imageURl];
-    [self.categoryView setImgViewImageWithUrl:request];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:imageURl];
+    [self.categoryView setImgViewImageWithUrl:imageURl];
 
 }
 

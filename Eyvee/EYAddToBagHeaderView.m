@@ -105,7 +105,7 @@
     {
         if ([productResizeImage.imageTag isEqual:@"front"] )
         {
-            if ([productResizeImage.imageSize isEqual:@"thumbnail"])
+            if ([productResizeImage.imageSize isEqual:@"large"])
             {
                 _thumbnailImage = productResizeImage.image;
             }

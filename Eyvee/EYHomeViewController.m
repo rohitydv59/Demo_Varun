@@ -169,31 +169,57 @@
     
     NSString *imagePath = nil;
 
+//    for (EYProductResizeImages *images in bannerModel.resizedImages)
+//    {
+//        if ([EYUtility isDeviceGreaterThanSix])
+//        {
+//            if ([images.imageSize isEqualToString:@"medium"])
+//            {
+//                imagePath = images.image;
+//            }
+//            else
+//            {
+//                if ([images.imageSize isEqualToString:@"small"])
+//                {
+//                    imagePath = images.image;
+//                }
+//            }
+//        }
+//        else
+//        {
+//            if ([images.imageSize isEqualToString:@"small"])
+//            {
+//                imagePath = images.image;
+//            }
+//        }
+//    }
+
     for (EYProductResizeImages *images in bannerModel.resizedImages)
     {
-        if ([EYUtility isDeviceGreaterThanSix])
-        {
+//        if ([EYUtility isDeviceGreaterThanSix])
+       // {
             if ([images.imageSize isEqualToString:@"medium"])
             {
                 imagePath = images.image;
+                NSLog(@"imagePath isss %@",imagePath);
             }
-            else
-            {
-                if ([images.imageSize isEqualToString:@"small"])
-                {
-                    imagePath = images.image;
-                }
-            }
-        }
-        else
-        {
-            if ([images.imageSize isEqualToString:@"small"])
-            {
-                imagePath = images.image;
-            }
-        }
+//            else
+//            {
+//                if ([images.imageSize isEqualToString:@"small"])
+//                {
+//                    imagePath = images.image;
+//                }
+//            }
+       // }
+//        else
+//        {
+//            if ([images.imageSize isEqualToString:@"small"])
+//            {
+//                imagePath = images.image;
+//            }
+//        }
     }
-    
+
     if (!imagePath) {
         imagePath = bannerModel.imageName;
     }
@@ -204,7 +230,7 @@
     else
     {
         NSURL *sliderImageUrl = [NSURL URLWithString:imagePath];
-        [cell setBannerImage:sliderImageUrl];
+        [cell setBannerImage:imagePath];
     }
     
     return cell;
