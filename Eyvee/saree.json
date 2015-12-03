@@ -365,129 +365,129 @@
                          "promocodes": null,
                          "productImages": [
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_1.jpeg",
+                                           "image": "product-30_1.jpeg",
                                            "imageTag": "front",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_2.jpeg",
+                                           "image": "product-30_2.jpeg",
                                            "imageTag": "side",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_3.jpeg",
+                                           "image": "product-30_3.jpeg",
                                            "imageTag": "back",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_4.jpeg",
+                                           "image": "product-30_4.jpeg",
                                            "imageTag": "",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_5.jpg",
+                                           "image": "product-30_5.jpg",
                                            "imageTag": "",
                                            "imageSize": null
                                            }
                                            ],
                          "productResizeImages": [
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_1-small.jpeg",
+                                                 "image": "product-30_1-small.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_1-medium.jpeg",
+                                                 "image": "product-30_1-medium.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_1-large.jpeg",
+                                                 "image": "product-30_1-large.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_1-thumbnail.jpeg",
+                                                 "image": "product-30_1-thumbnail.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_2-small.jpeg",
+                                                 "image": "product-30_2-small.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_2-medium.jpeg",
+                                                 "image": "product-30_2-medium.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_2-large.jpeg",
+                                                 "image": "product-30_2-large.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_2-thumbnail.jpeg",
+                                                 "image": "product-30_2-thumbnail.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_3-small.jpeg",
+                                                 "image": "product-30_3-small.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_3-medium.jpeg",
+                                                 "image": "product-30_3-medium.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_3-large.jpeg",
+                                                 "image": "product-30_3-large.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_3-thumbnail.jpeg",
+                                                 "image": "product-30_3-thumbnail.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_4-small.jpeg",
+                                                 "image": "product-30_4-small.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_4-medium.jpeg",
+                                                 "image": "product-30_4-medium.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_4-large.jpeg",
+                                                 "image": "product-30_4-large.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_4-thumbnail.jpeg",
+                                                 "image": "product-30_4-thumbnail.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_5-small.jpg",
+                                                 "image": "product-30_5-small.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_5-medium.jpg",
+                                                 "image": "product-30_5-medium.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_5-large.jpg",
+                                                 "image": "product-30_5-large.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-30/product-30_5-thumbnail.jpg",
+                                                 "image": "product-30_5-thumbnail.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "thumbnail"
                                                  }
@@ -607,79 +607,79 @@
                          "promocodes": null,
                          "productImages": [
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1.jpg",
+                                           "image": "product-46_1.jpg",
                                            "imageTag": "front",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2.jpg",
+                                           "image": "product-46_2.jpg",
                                            "imageTag": "side",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3.jpg",
+                                           "image": "product-46_3.jpg",
                                            "imageTag": "back",
                                            "imageSize": null
                                            }
                                            ],
                          "productResizeImages": [
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-small.jpg",
+                                                 "image": "product-46_1-small.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-medium.jpg",
+                                                 "image": "product-46_1-medium.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-large.jpg",
+                                                 "image": "product-46_1-large.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_1-thumbnail.jpg",
+                                                 "image": "product-46_1-thumbnail.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-small.jpg",
+                                                 "image": "product-46_2-small.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-medium.jpg",
+                                                 "image": "product-46_2-medium.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-large.jpg",
+                                                 "image": "product-46_2-large.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_2-thumbnail.jpg",
+                                                 "image": "product-46_2-thumbnail.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-small.jpg",
+                                                 "image": "product-46_3-small.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-medium.jpg",
+                                                 "image": "product-46_3-medium.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-large.jpg",
+                                                 "image": "product-46_3-large.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-46/product-46_3-thumbnail.jpg",
+                                                 "image": "product-46_3-thumbnail.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "thumbnail"
                                                  }
@@ -909,79 +909,79 @@
                          "promocodes": null,
                          "productImages": [
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_1.jpg",
+                                           "image": "product-15_1.jpg",
                                            "imageTag": "front",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_2.jpg",
+                                           "image": "product-15_2.jpg",
                                            "imageTag": "side",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_3.jpg",
+                                           "image": "product-15_3.jpg",
                                            "imageTag": "back",
                                            "imageSize": null
                                            }
                                            ],
                          "productResizeImages": [
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_1-small.jpg",
+                                                 "image": "product-15_1-small.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_1-medium.jpg",
+                                                 "image": "product-15_1-medium.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_1-large.jpg",
+                                                 "image": "product-15_1-large.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_1-thumbnail.jpg",
+                                                 "image": "product-15_1-thumbnail.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_2-small.jpg",
+                                                 "image": "product-15_2-small.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_2-medium.jpg",
+                                                 "image": "product-15_2-medium.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_2-large.jpg",
+                                                 "image": "product-15_2-large.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_2-thumbnail.jpg",
+                                                 "image": "product-15_2-thumbnail.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_3-small.jpg",
+                                                 "image": "product-15_3-small.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_3-medium.jpg",
+                                                 "image": "product-15_3-medium.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_3-large.jpg",
+                                                 "image": "product-15_3-large.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-15/product-15_3-thumbnail.jpg",
+                                                 "image": "product-15_3-thumbnail.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "thumbnail"
                                                  }
@@ -1184,129 +1184,129 @@
                                         ],
                          "productImages": [
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1.jpeg",
+                                           "image": "product-29_1.jpeg",
                                            "imageTag": "front",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2.jpeg",
+                                           "image": "product-29_2.jpeg",
                                            "imageTag": "side",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3.jpeg",
+                                           "image": "product-29_3.jpeg",
                                            "imageTag": "back",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4.jpeg",
+                                           "image": "product-29_4.jpeg",
                                            "imageTag": "",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5.jpg",
+                                           "image": "product-29_5.jpg",
                                            "imageTag": "",
                                            "imageSize": null
                                            }
                                            ],
                          "productResizeImages": [
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-small.jpeg",
+                                                 "image": "product-29_1-small.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-medium.jpeg",
+                                                 "image": "product-29_1-medium.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-large.jpeg",
+                                                 "image": "product-29_1-large.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_1-thumbnail.jpeg",
+                                                 "image": "product-29_1-thumbnail.jpeg",
                                                  "imageTag": "front",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-small.jpeg",
+                                                 "image": "product-29_2-small.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-medium.jpeg",
+                                                 "image": "product-29_2-medium.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-large.jpeg",
+                                                 "image": "product-29_2-large.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_2-thumbnail.jpeg",
+                                                 "image": "product-29_2-thumbnail.jpeg",
                                                  "imageTag": "side",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-small.jpeg",
+                                                 "image": "product-29_3-small.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-medium.jpeg",
+                                                 "image": "product-29_3-medium.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-large.jpeg",
+                                                 "image": "product-29_3-large.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_3-thumbnail.jpeg",
+                                                 "image": "product-29_3-thumbnail.jpeg",
                                                  "imageTag": "back",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-small.jpeg",
+                                                 "image": "product-29_4-small.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-medium.jpeg",
+                                                 "image": "product-29_4-medium.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-large.jpeg",
+                                                 "image": "product-29_4-large.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_4-thumbnail.jpeg",
+                                                 "image": "product-29_4-thumbnail.jpeg",
                                                  "imageTag": "",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-small.jpg",
+                                                 "image": "product-29_5-small.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-medium.jpg",
+                                                 "image": "product-29_5-medium.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-large.jpg",
+                                                 "image": "product-29_5-large.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-29/product-29_5-thumbnail.jpg",
+                                                 "image": "product-29_5-thumbnail.jpg",
                                                  "imageTag": "",
                                                  "imageSize": "thumbnail"
                                                  }
@@ -1428,79 +1428,79 @@
                          "promocodes": null,
                          "productImages": [
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_1.jpg",
+                                           "image": "product-48_1.jpg",
                                            "imageTag": "front",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_2.jpg",
+                                           "image": "product-48_2.jpg",
                                            "imageTag": "side",
                                            "imageSize": null
                                            },
                                            {
-                                           "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_3.jpg",
+                                           "image": "product-48_3.jpg",
                                            "imageTag": "back",
                                            "imageSize": null
                                            }
                                            ],
                          "productResizeImages": [
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_1-small.jpg",
+                                                 "image": "product-48_1-small.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_1-medium.jpg",
+                                                 "image": "product-48_1-medium.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_1-large.jpg",
+                                                 "image": "product-48_1-large.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_1-thumbnail.jpg",
+                                                 "image": "product-48_1-thumbnail.jpg",
                                                  "imageTag": "front",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_2-small.jpg",
+                                                 "image": "product-48_2-small.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_2-medium.jpg",
+                                                 "image": "product-48_2-medium.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_2-large.jpg",
+                                                 "image": "product-48_2-large.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_2-thumbnail.jpg",
+                                                 "image": "product-48_2-thumbnail.jpg",
                                                  "imageTag": "side",
                                                  "imageSize": "thumbnail"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_3-small.jpg",
+                                                 "image": "product-48_3-small.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "small"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_3-medium.jpg",
+                                                 "image": "product-48_3-medium.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "medium"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_3-large.jpg",
+                                                 "image": "product-48_3-large.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "large"
                                                  },
                                                  {
-                                                 "image": "http://d1nrmvqdi0940s.cloudfront.net/webadmin/static/resources/products/product-48/product-48_3-thumbnail.jpg",
+                                                 "image": "product-48_3-thumbnail.jpg",
                                                  "imageTag": "back",
                                                  "imageSize": "thumbnail"
                                                  }

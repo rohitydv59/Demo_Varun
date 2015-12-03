@@ -162,24 +162,44 @@
         
         NSString *imagePath = nil;
 
-        for (EYProductResizeImages *images in sliderModel.resizedImages) {
+//        for (EYProductResizeImages *images in sliderModel.resizedImages) {
+//
+//            if ([EYUtility isDeviceGreaterThanSix])
+//            {
+//                if ([images.imageSize isEqualToString:@"medium"])
+//                {
+//                    imagePath = images.image;
+//                    break;
+//                }
+//            }
+//            else
+//            {
+//                if ([images.imageSize isEqualToString:@"small"])
+//                {
+//                    imagePath = images.image;
+//                    break;
+//                }
+//            }
+//        }
 
-            if ([EYUtility isDeviceGreaterThanSix])
+        for (EYProductResizeImages *images in sliderModel.resizedImages) {
+            
+//            if ([EYUtility isDeviceGreaterThanSix])
             {
                 if ([images.imageSize isEqualToString:@"medium"])
                 {
                     imagePath = images.image;
-                    break;
+//                    break;
                 }
             }
-            else
-            {
-                if ([images.imageSize isEqualToString:@"small"])
-                {
-                    imagePath = images.image;
-                    break;
-                }
-            }
+//            else
+//            {
+//                if ([images.imageSize isEqualToString:@"small"])
+//                {
+//                    imagePath = images.image;
+//                    break;
+//                }
+//            }
         }
         
         if (!imagePath) {
@@ -191,7 +211,7 @@
         }
         else {
             NSURL *sliderImageUrl = [NSURL URLWithString:imagePath];
-            [cell setBannerImage:sliderImageUrl];
+            [cell setBannerImage:imagePath];
         }
         
         NSString *sliderMainText = sliderModel.headerText;

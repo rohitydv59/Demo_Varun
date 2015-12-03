@@ -39,8 +39,14 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    NSLog(@"self imageStr isss rr %@",self.imageStr);
+    NSLog(@"self largeImageStr isss rr %@",self.largeImageStr);
     [self.scrollView setImageURL:_imageStr];
     [_scrollView setLargeImageStr:self.largeImageStr];
+
+//    [self.scrollView setImageURL:_imageStr];
+//    [_scrollView setLargeImageStr:self.largeImageStr];
+
 }
 
 -(void)viewWillLayoutSubviews

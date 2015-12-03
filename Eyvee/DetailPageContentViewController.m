@@ -46,7 +46,9 @@
 
 - (void)setImageURL:(NSString *)largeImageURL placeHolderImage:(UIImage *)image
 {
-    [self.headerImageView setImageWithURL:[NSURL URLWithString:largeImageURL] placeholderImage:image];
+//    [self.headerImageView setImageWithURL:[NSURL URLWithString:largeImageURL] placeholderImage:image];
+    [self.headerImageView setImage:[UIImage imageNamed:largeImageURL]];
+
 }
 
 - (void)singleTap:(UIGestureRecognizer *)recog

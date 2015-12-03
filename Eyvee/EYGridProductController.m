@@ -691,22 +691,22 @@ static NSString * const reuseIdentifier = @"Cell";
     
     for (EYProductResizeImages * productResizeImage in productModel.productResizeImages)
     {
-        if ([EYUtility isDeviceGreaterThanSix])                               // for 6+
+//        if ([EYUtility isDeviceGreaterThanSix])                               // for 6+
         {
-            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"medium"])
+            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"large"])
             {
                 NSString *imagePath = productResizeImage.image;
                 [cell setProductImage:imagePath];
             }
         }
-        else
-        {
-            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"small"])
-            {
-                NSString *imagePath = productResizeImage.image;
-                [cell setProductImage:imagePath];
-            }
-        }
+//        else
+//        {
+//            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"small"])
+//            {
+//                NSString *imagePath = productResizeImage.image;
+//                [cell setProductImage:imagePath];
+//            }
+//        }
     }
     
     NSString *brandName = productModel.brandName;
@@ -865,20 +865,20 @@ static NSString * const reuseIdentifier = @"Cell";
     
     for (EYProductResizeImages * productResizeImage in productModel.productResizeImages)
     {
-        if ([EYUtility isDeviceGreaterThanSix])                          // for 6+
+//        if ([EYUtility isDeviceGreaterThanSix])                          // for 6+
         {
-            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"medium"])
+            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"large"])
             {
                 self.detailVC.selectedSmallImagePath = productResizeImage.image;
             }
         }
-        else
-        {
-            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"small"])
-            {
-                self.detailVC.selectedSmallImagePath = productResizeImage.image;
-            }
-        }
+//        else
+//        {
+//            if ([productResizeImage.imageTag isEqual:@"front"] && [productResizeImage.imageSize isEqual:@"small"])
+//            {
+//                self.detailVC.selectedSmallImagePath = productResizeImage.image;
+//            }
+//        }
     }
     
     [self.navigationController pushViewController:_detailVC animated:YES];

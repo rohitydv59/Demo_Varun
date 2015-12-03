@@ -35,7 +35,7 @@
     for (EYProductResizeImages * productResizeImage in self.productResizeImagesModelReceived)
     {
 //        if (mainSize.height > 568.0f && mainSize.width > 375)                          // for 6+
-        if ([EYUtility isDeviceGreaterThanSix])
+//        if ([EYUtility isDeviceGreaterThanSix])
         {
             if ([productResizeImage.imageTag isEqual:@"front"] )
             {
@@ -49,20 +49,20 @@
                 }
             }
         }
-        else
-        {
-            if ([productResizeImage.imageTag isEqual:@"front"] )
-            {
-                if ([productResizeImage.imageSize isEqual:@"medium"])
-                {
-                    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
-                    [dict setObject:productResizeImage.image forKey:@"imageUrl"];
-                    [dict setObject:productResizeImage.imageTag forKey:@"imageTag"];
-                    [self.pageImages addObject:dict];
-//                    break;
-                }
-            }
-        }
+//        else
+//        {
+//            if ([productResizeImage.imageTag isEqual:@"front"] )
+//            {
+//                if ([productResizeImage.imageSize isEqual:@"medium"])
+//                {
+//                    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+//                    [dict setObject:productResizeImage.image forKey:@"imageUrl"];
+//                    [dict setObject:productResizeImage.imageTag forKey:@"imageTag"];
+//                    [self.pageImages addObject:dict];
+////                    break;
+//                }
+//            }
+//        }
         
         
         if ([productResizeImage.imageTag isEqual:@"front"] )
@@ -81,8 +81,7 @@
     
     for (EYProductResizeImages * productResizeImage in self.productResizeImagesModelReceived)
     {
-//        if (mainSize.height > 568.0f && mainSize.width > 375)                          // for 6+
-        if ([EYUtility isDeviceGreaterThanSix])
+//        if ([EYUtility isDeviceGreaterThanSix])
         {
             if (![productResizeImage.imageTag isEqual:@"front"] )
             {
@@ -95,20 +94,20 @@
                 }
             }
         }
-        else
-        {
-            if (![productResizeImage.imageTag isEqual:@"front"] )
-            {
-                if ([productResizeImage.imageSize isEqual:@"medium"])
-                {
-                    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
-                    [dict setObject:productResizeImage.image forKey:@"imageUrl"];
-                    [dict setObject:productResizeImage.imageTag forKey:@"imageTag"];
-                    [self.pageImages addObject:dict];
-                }
-            }
-        }
-        
+//        else
+//        {
+//            if (![productResizeImage.imageTag isEqual:@"front"] )
+//            {
+//                if ([productResizeImage.imageSize isEqual:@"medium"])
+//                {
+//                    NSMutableDictionary * dict = [[NSMutableDictionary alloc] init];
+//                    [dict setObject:productResizeImage.image forKey:@"imageUrl"];
+//                    [dict setObject:productResizeImage.imageTag forKey:@"imageTag"];
+//                    [self.pageImages addObject:dict];
+//                }
+//            }
+//        }
+//        
         if (![productResizeImage.imageTag isEqual:@"front"] )
         {
             if ([productResizeImage.imageSize isEqual:@"large"])
@@ -172,10 +171,12 @@
     [pageContentViewController.view setFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
     
     UIImage *placeholder = nil;
-    if (index == 0 && self.selectedSmallImageString.length > 0) {
-        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.selectedSmallImageString]];
-        placeholder = [[UIImageView sharedImageCache] cachedImageForRequest:request];
-    }
+//    if (index == 0 && self.selectedSmallImageString.length > 0) {
+//        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.selectedSmallImageString]];
+//        placeholder = [[UIImageView sharedImageCache] cachedImageForRequest:request];
+//    }
+//    
+//    placeholder = [UIImage imageNamed:<#(nonnull NSString *)#>]
 
     [pageContentViewController setImageURL:[self gettingImageUrlString:self.pageImages withIndex:index] placeHolderImage:placeholder];
     
