@@ -118,8 +118,6 @@
     EDImageInnerController *controller = [[EDImageInnerController alloc] initWithNibName:nil bundle:nil];
     controller.imageStr = [self gettingImageUrlString:self.imageArray withIndex:index];
     controller.largeImageStr = [self gettingImageUrlString:self.largeImageArray withIndex:index];
-    NSLog(@"imageStr isss rr %@",controller.imageStr);
-    NSLog(@"largeImageStr isss rr %@",controller.largeImageStr);
     controller.delegate = self;
     controller.view.tag = index;
 
@@ -139,7 +137,6 @@
     self.crossBtn.frame = (CGRect){rect.size.width - 44.0, 0.0, 44.0, 44.0};
     self.crossBtn.frame = CGRectInset(self.crossBtn.frame, -20, -20);
     self.pageController.view.frame = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height);
-    
     [self.pageControl setFrame:CGRectMake(self.pageController.view.frame.origin.x, self.pageController.view.frame.size.height - kPageControlHeight, self.pageController.view.frame.size.width, kPageControlHeight)];
 }
 
@@ -148,7 +145,6 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
     NSInteger index = viewController.view.tag;
-//    NSLog(@"viewControllerBeforeViewController index is %ld", (long)index);
     self.pageControl.currentPage = index;
     UIViewController *controller = [self viewControllerForIndex:index - 1];
     return controller;
@@ -157,7 +153,6 @@
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
     NSInteger index = viewController.view.tag;
-    NSLog(@"viewControllerAfterViewController index is %ld", (long)index);
     self.pageControl.currentPage = index;
     UIViewController *controller = [self viewControllerForIndex:index + 1];
     return controller;
@@ -323,7 +318,6 @@
                             else
                             {
                                 CGFloat hh = ((self.view.frame.size.height + 64) - cellImageSnapshot.image.size.height) / 2;
-                                NSLog(@"to be checked ");
                                 cellImageSnapshot.frame = CGRectMake(0, hh, newFrame.size.width , newFrame.size.height - kPageControlHeight);
                             }
 
@@ -414,19 +408,6 @@
     }
     imgView.frame = contentsFrame;
     
-//    if ([EYUtility isDeviceGreaterThanSix])                          // for 6+
-//    {
-//        imgSize = CGSizeMake(480 , 720);
-//        imgView.frame  = CGRectMake(contentsFrame.origin.x, contentsFrame.origin.y, 480, 720);
-//        
-//    }
-//    else
-//    {
-//        imgSize = CGSizeMake(360 , 540);
-//        imgView.frame  = CGRectMake(contentsFrame.origin.x, contentsFrame.origin.y, 360, 540);
-//    }
-
-//    NSLog(@"imgView.frame is %@", NSStringFromCGRect(imgView.frame));
     return imgView.frame;
 }
 

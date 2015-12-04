@@ -201,7 +201,6 @@
             if ([images.imageSize isEqualToString:@"medium"])
             {
                 imagePath = images.image;
-                NSLog(@"imagePath isss %@",imagePath);
             }
 //            else
 //            {

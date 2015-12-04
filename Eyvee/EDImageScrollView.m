@@ -90,8 +90,8 @@
 //         [weakself processImageResponse:nil];
 //         
 //     }];
-    NSLog(@"imageURL ddisss %@",imageURL);
     [self.imageView setImage:[UIImage imageNamed:imageURL]];
+    [self setupInitialZoomAndFrame];
 }
 
 - (void)setImageURL:(NSString *)imageURL
@@ -137,7 +137,17 @@
     
     CGSize boundsSize = self.bounds.size;
     CGSize imageSize = self.imageView.image.size;
+    if (![EYUtility isDeviceGreaterThanSix])
+    {
+        imageSize = CGSizeMake(360, 540);
+    }
+    else
+    {
+        imageSize = CGSizeMake(1440, 2160);
+    }
     
+//    6+ 1440 ,2160
+    // 360, 540
     CGFloat xScale = boundsSize.width / imageSize.width;
     CGFloat yScale = boundsSize.height / imageSize.height;
     
